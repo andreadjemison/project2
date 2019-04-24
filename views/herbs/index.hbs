@@ -1,0 +1,16 @@
+<main>
+	{{!-- <h2>Handmade, Fresh, Daily!</h2> --}}
+
+	{{#each herbs}}
+
+	<div class="donut-container">
+		<a href="/{{_id}}">
+			<img src="{{img}}" alt="" srcset="">
+			<h3> {{ name }} </h3>
+		</a>
+		<p>$ {{price}} each </p>
+	</div>
+	{{/each}}
+
+
+</main>

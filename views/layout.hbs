@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>Drea's Medicinal Herb Shop</title>
+    <link href='https://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/public/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href='/'>
+            <h1> Drea's Medicinal Herb Shop</h1>
+        </a>
+
+        <div id="shoppingcart">
+            <a href="/new">
+                {{!-- <img src="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-black/bfa/bfa_shopping-cart/bfa_shopping-cart_flat-circle-white-on-black_512x512.png"> --}}
+                <br><br>
+                Request New Herbs
+            </a>
+            <a href="/new">
+                {{!-- <img src="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-black/bfa/bfa_shopping-cart/bfa_shopping-cart_flat-circle-white-on-black_512x512.png"> --}}
+                <br><br>
+                Request New Essential Oils
+            </a>
+            <a href="/new">
+                <br><br>
+                Request New Supplements
+            </a>
+            <br>
+        </div>
+    </nav>
+
+    {{{ body }}}
+
+    <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="/script.js"></script>
+</body>
+
+</html>
