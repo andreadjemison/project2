@@ -14,9 +14,9 @@ At Drea's Medicinal Herb Shop, we strive to give the best quality herbs and also
 ![alt text](wireframes/dailydouble.jpg) -->
 
 # References Used
-[Starwest Botanicals](https://www.starwest-botanicals.com/)
-[Mountain Rose Herbs](https://www.mountainroseherbs.com/)
-[The Herb Shop](https://bulkherbshop.com/)
+[Starwest Botanicals](https://www.starwest-botanicals.com/) <br>
+[Mountain Rose Herbs](https://www.mountainroseherbs.com/) <br>
+[The Herb Shop](https://bulkherbshop.com/)<br>
 
 # Technologies Used
 <!-- HTML5 <br> -->

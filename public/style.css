@@ -1,0 +1,43 @@
+*{
+    text-decoration: none;
+}
+h1{
+    color: green;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* border: solid purple; */
+}
+h2, h3{
+    text-align: center;
+
+}
+h3{
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p{
+    font-weight: bolder;
+}
+img{
+    height: 200px;
+    border-radius: 15px;
+}
+main{
+    text-align: center;
+    justify-content: center;
+}
+.herbs-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10%;
+    text-align: center;
+    background: rgb(206, 206, 206);
+    align-items: center;
+}
+#menuitems{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    border: solid black;
+}

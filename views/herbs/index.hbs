@@ -1,16 +1,26 @@
 <main>
-	{{!-- <h2>Handmade, Fresh, Daily!</h2> --}}
+	<div class="herbs-container">
+	<h2>All Herbs</h2>
 
 	{{#each herbs}}
 
-	<div class="donut-container">
+	
 		<a href="/{{_id}}">
-			<img src="{{img}}" alt="" srcset="">
-			<h3> {{ name }} </h3>
+					<h3> {{ name }} </h3>
+			<img src="{{ img }}" alt="" srcset="">
+
 		</a>
-		<p>$ {{price}} each </p>
-	</div>
+        <p>{{description}}</p>
+		<p>$ {{price}} per pound </p>
+
+<ul class="ailmentlist"> 
+	<h3>Best Used For</h3>
+  {{#each ailmentName}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>
 	{{/each}}
+	</div>
 
 
 </main>

@@ -2,93 +2,48 @@
 // REQUIREMENTS
 //= =====================
 // require the herb model
-const herb = require('../models/schemas.js')
+const mongoose = require('../db/connection.js')
+// const db = require('../db/herbs.js')
+// const ObjectId = mongoose.Schema.Types.ObjectId
 
-const herbController = {
-    //= =====================
-    // INDEX
-    //= =====================
-    // Create a function sends all herbs to herbs/index.hbs view
-    index: (req, res) => {
-        // herb.find()
-            // .then(herbs => {
-                res.render('herbs/index')
-            // }
-            // )
-    },
-    //= =====================
-    // NEW
-    //= =====================
-    // Create a function that renders the new.hbs form
-    new: (req, res) => {
-        res.render('/herbs/new')
-    },
-    //= =====================
-    // SHOW
-    //= =====================
-    // Create a function that renders a single herb's show page
-    show: (req, res) => {
-        // herb.findById(req.params.id)
-            // .then(herb => {
-                res.render('herbs/show',
-                //  { herb }
-                 )
-            // })
-    },
-    //= =====================
-    // CREATE
-    //= =====================
-    // Create a function that creates a new herb
-    // and upon success redirects back to the index page "/"
-    create: (req, res) => {
-        // herb.create(req.body)
-        //     .then(() =>
-                res.redirect('/')
-                // )
-    },
-    //= =====================
-    // EDIT
-    //= =====================
-    // Create a function that renders the edit.hbs page and
-    // sends that a herb's data to it
-    edit: (req, res) => {
+const herbSchema = new mongoose.Schema({
+    name: String,
+    description: String,
+    img: String,
+    ailmentName: Array,
+    // benefits: Array,
+    price: Number,
+    // inStock: Boolean,
+})
+let herbCollection = mongoose.model('Herb', herbSchema)
 
-        // herb.findById(req.params.id)
-        //     .then(herb => {
-                res.render('herbs/edit', 
-                // { herb }
-                )
-            // })
-    },
-    //= =====================
-    // UPDATE
-    //= =====================
-    // Create a function that updates the herb and
-    // redirects back to the SHOW PAGE (not index)
-    update: (req, res) => {
-
-        // herb.findByIdAndUpdate(req.params.id, req.body, { new: true })
-        //     .then(() => {
-                res.redirect("/" + req.params.id)
-
-            // })
-    },
-    //= =====================
-    // DELETE
-    //= =====================
-    // Create a function that deletes the herb and
-    // redirects back to index page "/"
-    delete: (req, res) => {
-
-        // herb.findByIdAndRemove(req.params.id)
-            // .then(() => {
-                res.redirect("/")
-            // })
-    }
+// show all herbs
+const allHerbs = () => {
+    return herbCollection.find()
+}
+// create new herb
+const newHerb = (newherb) => {
+    return herbCollection.create(newherb)
+}
+// show single herb
+const oneHerb = (newherb) => {
+    return herbCollection.findById(newherb)
+}
+// update single herb
+const updateHerb = (herbid) => {
+    return herbCollection.findByIdAndUpdate(herbid)
+}
+// delete single herb
+const deleteHerb = (herbid) => {
+    return herbCollection.findByIdAndRemove(herbid)
 }
 
-//= =====================
-// EXPORTS
-//= =====================
+
 // export the controller with module.exports
-module.exports = herbController
+module.exports = {
+    allHerbs,
+    newHerb,
+    oneHerb,
+    updateHerb,
+    deleteHerb
+}
