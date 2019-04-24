@@ -14,9 +14,10 @@ const herbSchema = new mongoose.Schema({
     name: String,
     description: String,
     img: String,
-    uses: Array,
+    ailmentName: Array,
+    // benefits: Array,
     price: Number,
-    inStock: Boolean,
+    // inStock: Boolean,
 })
 const oilSchema = new mongoose.Schema({
     name: String,

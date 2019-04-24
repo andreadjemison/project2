@@ -26,15 +26,15 @@ app.set('view engine', 'hbs')
 app.use(logger('dev'))
 
 
-//= =====================
-// HERBS
-//= =====================
 
 app.get('/', (req, res) => {
     // herbApi.allHerbs().then(herbs => {
             res.render('herbs')
         })
     // })
+//= =====================================================
+// HERBS
+//= =====================================================
 
 // list/ index of all herbs
 app.get('/herbs', (req, res) => {
@@ -54,20 +54,18 @@ app.post('/herbs', (req, res) => {
 app.get('/herbs/:id', (req, res) => {
     herbApi.oneHerb(req.params.id).then(herb => {
             res.render('herbs/show', { herb })
-        })
-})
+        })})
 
 //delete single herb
 app.delete('/herbs/:id', (req, res) => {
     herbApi.deleteHerb(req.params.id).then(() => {
             res.render('herbs/index')
-        })
-})
+        })})
 
 //update single herb
 app.put('/herbs/:id', (req, res) => {
     herbApi.updateHerb(req.params.id).then(() => {
-            res.render('herbs/index')
+            res.render('herbs/edit')
         })})
 
 
