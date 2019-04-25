@@ -8,7 +8,7 @@
 
 
 		{{!-- <<<<< YOUR WHOLE FORM GOES HERE >>>>> --}}
-<form action="/{{herb.id}}?_method=PUT" method="POST">
+<form action="/herbs/{{herb.id}}?_method=put" method="POST">
 	<label for="name">Name</label>
 	<input type="text" name="name" value="" id="" placeholder="{{herb.name}}">
 <br>
@@ -22,9 +22,9 @@
 	<input type="number" name="price" value="" id="" placeholder="{{herb.price}}">
 <br>
 	<label for="ailmentName">Uses</label>
-	<input type="text" name="qty" value="" id="">
+	<input type="text" name="qty" value="" id="" placeholder="{{herb.ailmentName}}">
 <br>
-<input type="submit" value="Create herb">
+<input type="submit" value="Update herb">
 
 </form>
 

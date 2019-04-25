@@ -2,130 +2,130 @@ let oil = require('../api/oils.js')
 
 let newOils = [
     {
-        name: 'Chlorella',
-        description: 'Chlorella is a single-cell green algae containing the green photosynthetic pigments chlorophyll-a and -b in its chloroplast.',
-        img: '../imgs/chlorella.jpg',
+        name: 'Ginger',
+        description: 'The health benefits of ginger essential oil are nearly identical to the medicinal health benefits of fresh ginger; in fact, the most potent form of ginger is the essential oil because it contains the highest levels of gingerol. The essential oil is the best way to use ginger as medicine. It can be taken internally to treat health conditions or rubbed topically with a carrier oil on an area of pain. Today, ginger essential oil is used to treat nausea, upset stomach, menstrual disorders, inflammation and respiratory conditions. When used as aromatherapy, it’s also known to bring on feelings of courageousness and self-assurance, which is why it’s known as the oil of empowerment.',
+        img: '../imgs/ginger.jpeg',
         ailmentName: ['cancer prevention', 'detoxification', 'fibromyalgia', 'radiation treatment side effects', 'stimulates the immune system', 'colds', 'protecting the body against toxic metals', 'slowing the aging process'],
         price: 20,
         // inStock: Boolean
     },    {
-        name: 'Spirulina',
-        description: 'Spirulina is a natural “algae” (cyanbacteria) powder that is incredibly high in protein and a good source of antioxidants, B-vitamins and other nutrients. When harvested correctly from non-contaminated ponds and bodies of water, it is one of the most potent nutrient sources available.',
-        img: '../imgs/spirulina.jpg',
+        name: 'Peppermint',
+        description: 'Peppermint has a number of therapeutic properties. It is a cooling agent that enhances mood, sharpens focus, combats irritation and redness, alleviates symptoms of congestion, and aids in digestion.',
+        img: '../imgs/peppermint.jpeg',
         ailmentName: ['erectile dysfunction', 'low libido', 'depression', 'hair loss', 'menopause'],
         price: 20,
         // inStock: Boolean
-    },    {
-        name: 'Maca Root',
-        description: 'Maca (Lepidium meyenii) is the root of a vegetable native to the Andes region of Peru. Known as "Peruvian ginseng" (even though it doesn\'t belong to the same botanical family as ginseng), maca is consumed as a food and is said to boost energy and libido.',
-        img: '../imgs/maca.jpg',
-        ailmentName: ['Sexual Function', 'Libido', 'Fertility', 'Depression', 'Chemical Balance'],
-        price: 20,
-        // inStock: Boolean
-    },    {
-        name: 'Burdock Root',
-        description: 'Burdock root has been used for centuries in holistic medicine to treat a variety of different conditions. Traditionally, it was most commonly used as a diuretic and a digestive aid.',
-        img: '../imgs/burdock.jpg',
-        ailmentName: ['Diabetes', 'Infections', 'Blood Purifier', 'Diuretic', 'Cancer', 'Inflammation'],
-        price: 20,
+    // },    {
+    //     name: 'Marjoram',
+    //     description: 'One of this essential oils therapeutic properties is to calm hyperactivity and relieve anxiety. Marjoram was a popular plant used by the Greeks in medicines and also helps with digestion issues such as constipation and cramps. ',
+    //     img: '../imgs/marjoram.jpg',
+    //     ailmentName: ['Sexual Function', 'Libido', 'Fertility', 'Depression', 'Chemical Balance'],
+    //     price: 20,
     //     // inStock: Boolean
-    },    {
-        name: 'Ashwagandha Root',
-        description: 'Ashwagandha is an incredibly healthy medicinal oil. It’s classified as an "adaptogen," meaning that it can help your body manage stress. Ashwagandha also provides all sorts of other benefits for your body and brain.',
-        img: '../imgs/ashwagansha.jpg',
-        ailmentName: ['Diabetes', 'Cancer', 'Stress', 'Anxiety', 'Depression', 'Boost Testosterone', 'Men Fertility', 'Inflammation'],
-        price: 20,
+    // },    {
+    //     name: 'Patchouli',
+    //     description: 'Patchouli serves as a powerful skin care agent; it even promotes skin cell growth when applied directly to the skin. Patchouli helps to relieve anxiety, depression, fatigue, curb addiction, reduce cellulite and bloating. ',
+    //     img: '../imgs/patchouli.png',
+    //     ailmentName: ['Diabetes', 'Infections', 'Blood Purifier', 'Diuretic', 'Cancer', 'Inflammation'],
+    //     price: 20,
+    // //     // inStock: Boolean
+    // },    {
+    //     name: 'Chamomile',
+    //     description: 'Chamomile is a powerful calming agent, as well as antibiotic, antiseptic, antidepressant and overall mood lifter. The German variety is often better suited to battle inflammation, specifically urinary tract and digestive inflammation. Both also have analgesic properties and can help to eliminate acne. ',
+    //     img: '../imgs/chamomile.jpg',
+    //     ailmentName: ['Diabetes', 'Cancer', 'Stress', 'Anxiety', 'Depression', 'Boost Testosterone', 'Men Fertility', 'Inflammation'],
+    //     price: 20,
+    // //     // inStock: Boolean
+    // },    {
+    //     name: 'Jasmine',
+    //     description: 'Jasmine has been known to ease depression and childbirth, in addition to enhance libido. Its great for respiratory problems, addiction issues, and reducing tension and stress. ',
+    //     img: '../imgs/jasmine.jpg',
+    //     ailmentName: ['Inflammation', 'Brain Function', 'Erectile Dysfunction', 'Immune Boost', 'Cancer', 'Fatigue', 'Diabetes'],
+    //     price: 20,
     //     // inStock: Boolean
-    },    {
-        name: 'Ginseng',
-        description: 'Ginseng has been used in traditional Chinese medicine for centuries. This slow-growing, short plant with fleshy roots can be classified three ways, depending on how long it is grown: fresh, white or red.        Fresh ginseng is harvested before 4 years, while white ginseng is harvested between 4–6 years and red ginseng is harvested after 6 or more years.',
-        img: '../imgs/ginseng.jpg',
-        ailmentName: ['Inflammation', 'Brain Function', 'Erectile Dysfunction', 'Immune Boost', 'Cancer', 'Fatigue', 'Diabetes'],
-        price: 20,
-        // inStock: Boolean
-    },     {
-        name: 'Sea Moss',
-        description: 'Irish sea moss is a source of potassium chloride, a nutrient which helps to dissolve catarrhs (inflammation and phlegm in the mucous membranes), which cause congestion. It contains compounds which act as a natural antimicrobial and antiviral agents, helping to boost immunity and get rid of any infections.',
-        img: '../imgs/seamoss.jpg',
-        ailmentName: ['Cholesterol', 'Thyroid', 'Respiratory', 'Digestion', 'Pain Reliever', 'Skin', 'Tuberculosis'],
-        price: 20,
-        // inStock: Boolean
-    },     {
-        name: 'Bladderwrack',
-        description: 'Bladderwrack, like many sea plants, contains varying amounts of iodine, which is used to prevent or treat some thyroid disorders. Bladderwrack products may contain varying amounts of iodine, which makes it an inconsistent source of iodine. Bladderwrack also contains algin, which can act as a laxative to help the stool pass through the bowels.',
-        img: '../imgs/bladderwrack.jpg',
-        ailmentName: ['Inflammation', 'Brain Function', 'Erectile Dysfunction', 'Immune Boost', 'Cancer', 'Fatigue', 'Diabetes'],
-        price: 20,
-        // inStock: Boolean
-    },     {
-        name: 'Echinacea',
-        description: 'Echinacea is one of the most widely known oils in American folk oilalism. Used extensively by traditional oilalists and Native Americans alike in North America for generations, echinacea eventually gained popularity in Europe in the 1900\'s. One of its main uses is to support healthy immune function, although many of its historical uses were related to topical applications. It is now one of the most available dietary supplements in health food stores and continues to be a subject of many scientific studies investigating its immune support properties.',
-        img: '../imgs/echinacea.jpg',
-        ailmentName: ['Inflammation', 'Brain Function', 'Erectile Dysfunction', 'Immune Boost', 'Cancer', 'Fatigue', 'Diabetes'],
-        price: 20,
+    // },     {
+    //     name: 'Tea Tree',
+    //     description: ' Not only is it a natural immune booster, but it also fights all three kinds of infection. It works to heal skin conditions, burns and cuts, and also works as an insecticide. In addition, it helps to soothe and treat cold sores, respiratory conditions, muscle aches, the flu, Athletes foot and dandruff. Its uses are vast and its healing power is quick.',
+    //     img: '../imgs/teatree.jpg',
+    //     ailmentName: ['Cholesterol', 'Thyroid', 'Respiratory', 'Digestion', 'Pain Reliever', 'Skin', 'Tuberculosis'],
+    //     price: 20,
     //     // inStock: Boolean
-    },     {
-        name: 'Turmeric',
-        description: 'Turmeric is a spice that comes from the turmeric plant. It is commonly used in Asian food. You probably know turmeric as the main spice in curry. It has a warm, bitter taste and is frequently used to flavor or color curry powders, mustards, butters, and cheeses. But the root of turmeric is also used widely to make medicine. It contains a yellow-colored chemical called curcumin, which is often used to color foods and cosmetics. Turmeric is used for arthritis, heartburn (dyspepsia), joint pain, stomach pain, Crohn\'s disease and ulcerative colitis, bypass surgery, hemorrhage, diarrhea, intestinal gas, stomach bloating, loss of appetite, jaundice, liver problems, Helicobacter pylori (H. pylori) infection, stomach ulcers, irritable bowel syndrome (IBS), gallbladder disorders, high cholesterol, a skin condition called lichen planus, skin inflammation from radiation treatment, and fatigue. It is also used for headaches, bronchitis, colds, lung infections, hay fever, fibromyalgia, leprosy, fever, menstrual problems, itchy skin, recovery after surgery, and cancers. Other uses include depression, Alzheimer\'s disease, swelling in the middle layer of the eye (anterior uveitis), diabetes, water retention, worms, an autoimmune disease called systemic lupus erythematosus (SLE), tuberculosis, urinary bladder inflammation, and kidney problems. Some people apply turmeric to the skin for pain, ringworm, sprains and swellings, bruising, leech bites, eye infections, acne, inflammatory skin conditions and skin sores, soreness inside of the mouth, infected wounds, and gum disease.',
-        img: '../imgs/turmeric.jpg',
-        ailmentName: ['Arthritis', 'Heartburn', 'Crohn\'s', 'Ulcerative Colitis', 'Hemorrhage', 'Diarrhea', 'Alzheimer\'s'],
-        price: 20,
+    // },     {
+    //     name: 'Ylang Ylang',
+    //     description: 'Bladderwrack, like many sea plants, contains varying amounts of iodine, which is used to prevent or treat some thyroid disorders. Bladderwrack products may contain varying amounts of iodine, which makes it an inconsistent source of iodine. Bladderwrack also contains algin, which can act as a laxative to help the stool pass through the bowels.',
+    //     img: '../imgs/ylang.jpg',
+    //     ailmentName: ['Inflammation', 'Brain Function', 'Erectile Dysfunction', 'Immune Boost', 'Cancer', 'Fatigue', 'Diabetes'],
+    //     price: 20,
     //     // inStock: Boolean
-    },     {
-        name: 'Mullein',
-        description: 'An oil made from the flowers of the mullein plant is very commonly used to treat the pain and inflammation associated with earaches for children and adults alike. Mullein might even be able to fight influenza, herpes viruses and some bacteria that cause respiratory infections. <br> Traditional use of mullein in its various forms includes the treatment of bruises, burns, hemorrhoids and gout. Preparations of mullein can be ingested, applied topically and even smoked. In the Appalachia region of the United States, the plant has historically been used to treat colds and upper airway infections. Additionally, mullein leaves have been applied topically to soften and protect the skin.',
-        img: '../imgs/mullein.jpg',
-        ailmentName: ['Cough', 'Diarrhea', 'Antiseptic', 'Antiviral', 'Earaches', 'Mouth Ulcers', 'Sunburn', 'Postpartum Healing'],
-        price: 15,
+    // },     {
+    //     name: 'Lemon',
+    //     description: 'Lemon oil is a multifaceted essential oil. It helps with everything from skin irritation to digestion to circulation problems. It is a natural immunity booster and can even help reduce cellulite! Lemon oil helps to alleviate headaches and fever, and is a quick mood enhancer. ',
+    //     img: '../imgs/lemon.jpg',
+    //     ailmentName: ['Inflammation', 'Brain Function', 'Erectile Dysfunction', 'Immune Boost', 'Cancer', 'Fatigue', 'Diabetes'],
+    //     price: 20,
+    // //     // inStock: Boolean
+    // },     {
+    //     name: 'Eucalyptus',
+    //     description: 'It\s best used for sore throats, cough, seasonal allergies and headaches. Eucalyptus oil benefits are due to its ability to stimulate immunity, provide antioxidant protection and improve respiratory circulation. You can disinfect your home naturally, or repel rats that are managing to get inside.',
+    //     img: '../imgs/eucalyptus.jpg',
+    //     ailmentName: ['Asthma', 'Bronchitis', 'Sinusitis', 'Flu', 'Allergies', 'Inflammation', 'Mental Clarity'],
+    //     price: 20,
     //     // inStock: Boolean
-    },      {
-        name: 'Neem',
-        description: 'The primary purpose of neem leaves is the treatment of vaata disorders or neuromuscular pains. Then come the other benefits: purify the blood, prevent damage caused by free radicals in the body, remove toxins, treat insect bites and ulcers. Neem leaves have anti-bacterial properties which is why it works wonders on infections, burns and any kind of skin problems. It destroys the bacteria that causes infections, stimulates the immune system and encourages rapid healing. We tell you some benefits of neem.',
-        img: '../imgs/neem.jpg',
-        ailmentName: ['Inflammation', 'Detox', 'Antibacterial', 'Dandruff', 'Cancer', 'Acne', 'Oral Health', 'Malaria', 'Diabetes', 'Digestion', 'Birth Control'],
-        price: 20,
-        // inStock: Boolean
-    },     {
-        name: 'Olive Leaf',
-        description: 'Long used in traditional medicine, olive leaf extract comes from the leaves of the olive tree (Olea europaea) and has a variety of health benefits. Research shows oleuropein, the main component in olive leaf extract, has antioxidant, antibacterial, antimicrobial, anti-inflammatory, and immune-stimulating properties.',
-        img: '../imgs/oliveleaf.jpg',
-        ailmentName: ['Diabetes', 'High Blood Pressure', 'Viruses', 'Inflammation', 'Cancer', 'Alzheimers', 'Diabetes', 'Fatigue'],
-        price: 20,
-        // inStock: Boolean
-    },     {
-        name: 'Rosehips',
-        description: 'Rose hip is the fruit that develops from the blossoms of the wild rose plant. It ranges in color from orange to purplish black and usually develops in the latter part of the growing season, around late summer to autumn. A common ingredient in oilal teas, rose hip is also available in supplement and powdered forms. Rose hip contains a number of important antioxidants (including vitamin C, vitamin E, beta-carotene, and lycopene) that are beneficial to your health. Alternative practitioners also believe that rose hip can prevent or treat a wide range of gastrointestinal and inflammatory symptoms.',
-        img: '../imgs/rosehips.jpg',
-        ailmentName: ['Diarrhea', 'Constipation', 'Gallstones', 'Stretch Marks', 'UTI', 'Gout', 'Diabetes', 'Sciatica'],
-        price: 12,
-        // inStock: Boolean
-    },     {
-        name: 'Mucuna',
-        description: 'Mucuna\'s Pruriens contains a principle ingredient: L-Dopa, a naturally occurring amino acid which transforms into Dopamine in the Brain. Dopamine is a neurotransmitter which allows the dynamic functioning of the brain. Higher levels of Dopamine have been linked with sound sleep and an expanded sense of well-being. Mucuna has a reputation for reliably lifting mood and enhancing sexual function.',
-        img: '../imgs/mucuna.jpg',
-        ailmentName: ['Stress', 'ADHD', 'Depression', 'Fertility', 'Low Libido', 'Insomnia', 'Fatigue'],
-        price: 20,
+    // },     {
+    //     name: 'Mullein',
+    //     description: 'An oil made from the flowers of the mullein plant is very commonly used to treat the pain and inflammation associated with earaches for children and adults alike. Mullein might even be able to fight influenza, herpes viruses and some bacteria that cause respiratory infections. <br> Traditional use of mullein in its various forms includes the treatment of bruises, burns, hemorrhoids and gout. Preparations of mullein can be ingested, applied topically and even smoked. In the Appalachia region of the United States, the plant has historically been used to treat colds and upper airway infections. Additionally, mullein leaves have been applied topically to soften and protect the skin.',
+    //     img: '../imgs/mullein.jpg',
+    //     ailmentName: ['Cough', 'Diarrhea', 'Antiseptic', 'Antiviral', 'Earaches', 'Mouth Ulcers', 'Sunburn', 'Postpartum Healing'],
+    //     price: 15,
+    // //     // inStock: Boolean
+    // },      {
+    //     name: 'Neem',
+    //     description: 'The primary purpose of neem leaves is the treatment of vaata disorders or neuromuscular pains. Then come the other benefits: purify the blood, prevent damage caused by free radicals in the body, remove toxins, treat insect bites and ulcers. Neem leaves have anti-bacterial properties which is why it works wonders on infections, burns and any kind of skin problems. It destroys the bacteria that causes infections, stimulates the immune system and encourages rapid healing. We tell you some benefits of neem.',
+    //     img: '../imgs/neem.jpg',
+    //     ailmentName: ['Inflammation', 'Detox', 'Antibacterial', 'Dandruff', 'Cancer', 'Acne', 'Oral Health', 'Malaria', 'Diabetes', 'Digestion', 'Birth Control'],
+    //     price: 20,
     //     // inStock: Boolean
-    },     {
-        name: 'Haritaki',
-        description: 'As one of the three ingredients in the Ayurvedic super formula Triphala, haritaki (Terminalia chebula) is considered to be one of the best oils for balancing vata dosha. Supporting the body\'s innate cleansing process, it gently removes accumulated natural toxins in the gastrointestinal tract. As a rejuvenative, it strengthens and nourishes the tissues and supports the proper function of the colon, lungs, liver, and spleen. Haritaki is traditionally used as a remedy for all vata-related imbalances. It maintains regular elimination, helps promote healthy body mass, and supports comfortable and complete digestion. Haritaki is highly revered in India, as it is believed to increase energy, intelligence, and awareness.',
-        img: '../imgs/haritaki.jpg',
-        ailmentName: ['ADHD', 'Cystic Fibrosis', 'Anti-Aging', 'Sexual Function', 'Constipation', 'Digestion', 'Diabetes'],
-        price: 20,
+    // },     {
+    //     name: 'Olive Leaf',
+    //     description: 'Long used in traditional medicine, olive leaf extract comes from the leaves of the olive tree (Olea europaea) and has a variety of health benefits. Research shows oleuropein, the main component in olive leaf extract, has antioxidant, antibacterial, antimicrobial, anti-inflammatory, and immune-stimulating properties.',
+    //     img: '../imgs/oliveleaf.jpg',
+    //     ailmentName: ['Diabetes', 'High Blood Pressure', 'Viruses', 'Inflammation', 'Cancer', 'Alzheimers', 'Diabetes', 'Fatigue'],
+    //     price: 20,
     //     // inStock: Boolean
-    },     {
-        name: 'Banafsha',
-        description: 'Sweet violet is sometimes applied directly to the skin for skin disorders and as a skin cleanser. In oilal combinations, sweet violet is used for breathing problems including sudden (acute) and ongoing (chronic) bronchitis, asthma, emphysema, “dust-damaged” lungs, swelling (inflammation) of the respiratory tract, cold and flu symptoms, hoarseness, cough, and chest congestion. These oilal combinations are also used for involuntary urination (incontinence) in older people, bed-wetting, irritable bladder, and prostate conditions.',
-        img: '../imgs/banafsha.jpg',
-        ailmentName: ['Inflammation', 'Insomnia', 'Heartburn', 'Gas', 'Hot Flashes', 'Depression', 'Irritability'],
-        price: 20,
+    // },     {
+    //     name: 'Rosehips',
+    //     description: 'Rose hip is the fruit that develops from the blossoms of the wild rose plant. It ranges in color from orange to purplish black and usually develops in the latter part of the growing season, around late summer to autumn. A common ingredient in oilal teas, rose hip is also available in supplement and powdered forms. Rose hip contains a number of important antioxidants (including vitamin C, vitamin E, beta-carotene, and lycopene) that are beneficial to your health. Alternative practitioners also believe that rose hip can prevent or treat a wide range of gastrointestinal and inflammatory symptoms.',
+    //     img: '../imgs/rosehips.jpg',
+    //     ailmentName: ['Diarrhea', 'Constipation', 'Gallstones', 'Stretch Marks', 'UTI', 'Gout', 'Diabetes', 'Sciatica'],
+    //     price: 12,
     //     // inStock: Boolean
-    },   {
-        name: 'Bentonite Clay',
-        description: 'Healing clays like bentonite have a high concentration of minerals including silica, calcium, magnesium, sodium, iron, and potassium. It also absorbs and removes toxins, heavy metals, impurities, and chemicals. Because of this, bentonite clay is a common ingredient in detox and cleansing products. Common external uses include poultices, mud packs, detox baths, and skin care recipes. Some (including myself) even use it internally. It has an alkalizing effect on the body and when taken correctly, it can help balance gut bacteria.',
-        img: '../imgs/clay.jpg',
-        ailmentName: ['Digestion', 'Allergies', 'Detox', 'Oral Health', 'Speed Healing', 'Nausea', 'Cancer'],
-        price: 20,
+    // },     {
+    //     name: 'Mucuna',
+    //     description: 'Mucuna\'s Pruriens contains a principle ingredient: L-Dopa, a naturally occurring amino acid which transforms into Dopamine in the Brain. Dopamine is a neurotransmitter which allows the dynamic functioning of the brain. Higher levels of Dopamine have been linked with sound sleep and an expanded sense of well-being. Mucuna has a reputation for reliably lifting mood and enhancing sexual function.',
+    //     img: '../imgs/mucuna.jpg',
+    //     ailmentName: ['Stress', 'ADHD', 'Depression', 'Fertility', 'Low Libido', 'Insomnia', 'Fatigue'],
+    //     price: 20,
+    // //     // inStock: Boolean
+    // },     {
+    //     name: 'Haritaki',
+    //     description: 'As one of the three ingredients in the Ayurvedic super formula Triphala, haritaki (Terminalia chebula) is considered to be one of the best oils for balancing vata dosha. Supporting the body\'s innate cleansing process, it gently removes accumulated natural toxins in the gastrointestinal tract. As a rejuvenative, it strengthens and nourishes the tissues and supports the proper function of the colon, lungs, liver, and spleen. Haritaki is traditionally used as a remedy for all vata-related imbalances. It maintains regular elimination, helps promote healthy body mass, and supports comfortable and complete digestion. Haritaki is highly revered in India, as it is believed to increase energy, intelligence, and awareness.',
+    //     img: '../imgs/haritaki.jpg',
+    //     ailmentName: ['ADHD', 'Cystic Fibrosis', 'Anti-Aging', 'Sexual Function', 'Constipation', 'Digestion', 'Diabetes'],
+    //     price: 20,
+    // //     // inStock: Boolean
+    // },     {
+    //     name: 'Banafsha',
+    //     description: 'Sweet violet is sometimes applied directly to the skin for skin disorders and as a skin cleanser. In oilal combinations, sweet violet is used for breathing problems including sudden (acute) and ongoing (chronic) bronchitis, asthma, emphysema, “dust-damaged” lungs, swelling (inflammation) of the respiratory tract, cold and flu symptoms, hoarseness, cough, and chest congestion. These oilal combinations are also used for involuntary urination (incontinence) in older people, bed-wetting, irritable bladder, and prostate conditions.',
+    //     img: '../imgs/banafsha.jpg',
+    //     ailmentName: ['Inflammation', 'Insomnia', 'Heartburn', 'Gas', 'Hot Flashes', 'Depression', 'Irritability'],
+    //     price: 20,
+    // //     // inStock: Boolean
+    // },   {
+    //     name: 'Bentonite Clay',
+    //     description: 'Healing clays like bentonite have a high concentration of minerals including silica, calcium, magnesium, sodium, iron, and potassium. It also absorbs and removes toxins, heavy metals, impurities, and chemicals. Because of this, bentonite clay is a common ingredient in detox and cleansing products. Common external uses include poultices, mud packs, detox baths, and skin care recipes. Some (including myself) even use it internally. It has an alkalizing effect on the body and when taken correctly, it can help balance gut bacteria.',
+    //     img: '../imgs/clay.jpg',
+    //     ailmentName: ['Digestion', 'Allergies', 'Detox', 'Oral Health', 'Speed Healing', 'Nausea', 'Cancer'],
+    //     price: 20,
         // inStock: Boolean
     }, 
 ]

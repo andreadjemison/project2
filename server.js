@@ -66,8 +66,8 @@ app.delete('/herbs/:id', (req, res) => {
 
 //update single herb
 app.put('/herbs/:id', (req, res) => {
-    herbApi.updateHerb(req.params.id).then(() => {
-            res.render('herbs/edit')
+    herbApi.updateHerb(req.params.id, req.body).then(herb => {
+            res.render('herbs/edit', {herb})
         })})
 
 //= =====================================================
@@ -127,8 +127,8 @@ app.post('/sups', (req, res) => {
 
 // show single supplement
 app.get('/sups/:id', (req, res) => {
-    supApi.oneSup(req.params.id).then(oil => {
-            res.render('sups/show', { oil })
+    supApi.oneSup(req.params.id).then(sup => {
+            res.render('sups/show', { sup })
         })})
 
 //delete single supplement
