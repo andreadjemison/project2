@@ -1,25 +1,27 @@
 <main>
 	<h2>All Herbs</h2>
-	{{#each herbs}}
+
 	<div class="herbs-container">
+			{{#each herbs}}
+		<div class="herbs">
+			<a href="/herbs/{{_id}}">
+				<h3> {{ name }} </h3>
+				<img src="{{ img }}" alt="" srcset="">
 
-		<a href="/herbs/{{_id}}">
-			<h3> {{ name }} </h3>
-			<img src="{{ img }}" alt="" srcset="">
+			</a>
+						<h4>${{price}} per pound </h4>
+			{{!-- <p>{{description}}</p> --}}
 
-		</a>
-		<p>{{description}}</p>
-		<h4>${{price}} per pound </h4>
 
-		<ul class="ailmentlist">
-			<h3>Best Used For</h3>
-			{{#each ailmentName}}
-			<li>{{this}}</li>
-			{{/each}}
-		</ul>
+			{{!-- <ul class="ailmentlist">
+				<h3>Best Used For</h3>
+				{{#each ailmentName}}
+				<li>{{this}}</li>
+				{{/each}}
+			</ul> --}}
 
 	</div>
 	<br><br>
 	{{/each}}
-
+		</div>
 </main>

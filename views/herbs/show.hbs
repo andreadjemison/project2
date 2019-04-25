@@ -1,32 +1,32 @@
 <main>
-	<div class="herbs-container">
-	{{!-- <h2>All Herbs</h2> --}}
-	<a href="/herbs">Return to All Herbs</a>
+    <div class="herb-container">
+        {{!-- <h2>All Herbs</h2> --}}
+        <a href="/herbs">Return to All Herbs</a>
 
-	
-		<a href="herbs/{{_id}}">
-					<h3> {{ herb.name }} </h3>
-			<img src="{{ herb.img }}" alt="" srcset="">
+        <div class="herb">
+            <a href="herbs/{{_id}}">
+                <h3> {{ herb.name }} </h3>
+                <img src="{{ herb.img }}" alt="" srcset="">
 
-		</a>
-        <p>{{herb.description}}</p>
-		<p>$ {{herb.price}} per pound </p>
+            </a>
 
-<ul class="ailmentlist"> 
-	<h3>Best Used For</h3>
-  {{#each herb.ailmentName}}
-    <li>{{this}}</li>
-  {{/each}}
-</ul>
+            <p>$ {{herb.price}} per pound </p>
+            <p>{{herb.description}}</p>
+            <ul class="ailmentlist">
+                <h3>Best Used For</h3>
+                {{#each herb.ailmentName}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
 
-<form action="/herbs/{{herb.id}}?_method=put" method="POST">
-				<input type="submit" value="Modify Herb" id="">
-			</form>
-	<form action="/herbs/{{herb.id}}?_method=delete" method="POST">
-		<input type="submit" value="Delete Herb">
-	</form>
-
-	</div>
+            <form action="/herbs/{{herb.id}}?_method=put" method="POST">
+                <input type="submit" value="Modify Herb" id="">
+            </form>
+            <form action="/herbs/{{herb.id}}?_method=delete" method="POST">
+                <input type="submit" value="Delete Herb">
+            </form>
+        </div>
+    </div>
 
 
 </main>

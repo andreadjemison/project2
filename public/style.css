@@ -18,8 +18,8 @@ h3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h4{
-    font-size: 2em;
-    margin: 0;
+    font-size: 1.5em;
+    margin: 5px 0;
 }
 p{
     font-weight: bolder;
@@ -27,6 +27,7 @@ p{
 }
 img{
     height: 200px;
+    width: 200px;
     border-radius: 15px;
 }
 main{
@@ -36,16 +37,36 @@ main{
 }
 .herbs-container{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    
+    /* margin: 0 15%; */
     justify-content: center;
-    margin: 0 10%;
+    /* align-items: center; */
+    /* border: solid black; */
+
+}
+.herbs{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     background: rgb(206, 206, 206);
     align-items: center;
-    padding: 0 20px;
+    margin: 15px 20px;
     border-radius: 20px;
-    /* border: solid black; */
-
+    padding: 5px;
+    width: 300px;
+}
+.herb-container{
+    margin: 0 10%;
+    background: rgb(206, 206, 206);
+    border-radius: 20px;
+    padding: 20px;
+}
+.herb ul{
+    list-style: none;
+}
+.herbs:hover{
+    box-shadow: 3px 3px 15px;
 }
 #menuitems{
     width: 100vw;
