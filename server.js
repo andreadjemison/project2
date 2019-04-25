@@ -8,6 +8,8 @@ const methodOverride = require('method-override')
 const logger = require('morgan')
 // const routes = require('./routes/index')
 const herbApi = require('./api/herbs.js')
+const oilApi = require('./api/oils.js')
+const supApi = require('./api/sups.js')
 
 //= =====================
 // MIDDLEWARE
@@ -68,7 +70,78 @@ app.put('/herbs/:id', (req, res) => {
             res.render('herbs/edit')
         })})
 
+//= =====================================================
+// OILS
+//= =====================================================
 
+// list/ index of all oils
+app.get('/oils', (req, res) => {
+    oilApi.allOils().then(oils => {
+        console.log(oilApi.allOils())
+            res.render('oils/index', { oils })
+        })})
+
+// create new oil
+app.post('/oils', (req, res) => {
+    oilApi.newOil(req.body).then(() => {
+            console.log(req.body)
+            res.render('oils/new')
+        })})
+
+// show single oil
+app.get('/oils/:id', (req, res) => {
+    oilApi.oneOil(req.params.id).then(oil => {
+            res.render('oils/show', { oil })
+        })})
+
+//delete single oil
+app.delete('/oils/:id', (req, res) => {
+    oilApi.deleteOil(req.params.id).then(() => {
+            res.render('oils/index')
+        })})
+
+//update single oil
+app.put('/oils/:id', (req, res) => {
+    oilApi.updateOil(req.params.id).then(() => {
+            res.render('oils/edit')
+        })})
+
+     
+//= =====================================================
+// SUPPLEMENTS
+//= =====================================================
+
+// list/ index of all supplements
+app.get('/sups', (req, res) => {
+    supApi.allSups().then(sups => {
+        console.log(supApi.allSups())
+            res.render('sups/index', { sups })
+        })})
+
+// create new supplement
+app.post('/sups', (req, res) => {
+    supApi.newSup(req.body).then(() => {
+            console.log(req.body)
+            res.render('sups/new')
+        })})
+
+// show single supplement
+app.get('/sups/:id', (req, res) => {
+    supApi.oneSup(req.params.id).then(oil => {
+            res.render('sups/show', { oil })
+        })})
+
+//delete single supplement
+app.delete('/sups/:id', (req, res) => {
+    supApi.deleteSup(req.params.id).then(() => {
+            res.render('sups/index')
+        })})
+
+//update single supplement
+app.put('/sups/:id', (req, res) => {
+    supApi.updateSup(req.params.id).then(() => {
+            res.render('sups/edit')
+        })})
 
 let PORT = process.env.PORT || 3000
 app.listen(PORT, () => {

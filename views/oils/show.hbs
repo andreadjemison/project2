@@ -1,0 +1,32 @@
+<main>
+    <div class="oil-container">
+        {{!-- <h2>All oils</h2> --}}
+        <a href="/oils">Return to All oils</a>
+
+        <div class="oil">
+            <a href="oils/{{_id}}">
+                <h3> {{ oil.name }} </h3>
+                <img src="{{ oil.img }}" alt="" srcset="">
+
+            </a>
+
+            <p>$ {{oil.price}} per pound </p>
+            <p>{{oil.description}}</p>
+            <ul class="ailmentlist">
+                <h3>Best Used For</h3>
+                {{#each oil.ailmentName}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+
+            <form action="/oils/{{oil.id}}?_method=put" method="POST">
+                <input type="submit" value="Modify Oil" id="">
+            </form>
+            <form action="/oils/{{oil.id}}?_method=delete" method="POST">
+                <input type="submit" value="Delete Oil">
+            </form>
+        </div>
+    </div>
+
+
+</main>

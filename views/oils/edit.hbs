@@ -1,0 +1,36 @@
+<main>
+
+	<h2>EDIT OIL!</h2>
+
+	<a href="/oils/{{oil.id}}">Return to oil</a>
+
+	<div id="edit-form" class="oil-container-show">
+
+
+		{{!-- <<<<< YOUR WHOLE FORM GOES HERE >>>>> --}}
+<form action="/{{oil.id}}?_method=PUT" method="POST">
+	<label for="name">Name</label>
+	<input type="text" name="name" value="" id="" placeholder="{{oil.name}}">
+<br>
+	<label for="img">Image</label>
+	<input type="file" name="img" id="" >
+<br>
+	<label for="description">Description</label>
+	<input type="text" name="name" value="" id="" placeholder="{{oil.description}}">
+<br>
+	<label for="price">Price</label>
+	<input type="number" name="price" value="" id="" placeholder="{{oil.price}}">
+<br>
+	<label for="ailmentName">Uses</label>
+	<input type="text" name="qty" value="" id="">
+<br>
+<input type="submit" value="Create oil">
+
+</form>
+
+		<div id="img-preview">
+			<img src="../../imgs/{{oil.img}}">
+		</div>
+
+	</div>
+</main>

@@ -35,7 +35,7 @@ main{
     justify-content: center;
     background: white;
 }
-.herbs-container{
+.herbs-container, .oils-container, .sups-container{
     display: flex;
     flex-wrap: wrap;
     
@@ -45,7 +45,7 @@ main{
     /* border: solid black; */
 
 }
-.herbs{
+.herbs, .oils, .sups{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -56,16 +56,16 @@ main{
     padding: 5px;
     width: 300px;
 }
-.herb-container{
+.herb-container, .oil-container, .sup-container{
     margin: 0 10%;
     background: rgb(206, 206, 206);
     border-radius: 20px;
     padding: 20px;
 }
-.herb ul{
+.herb ul, .oil ul, .sup ul{
     list-style: none;
 }
-.herbs:hover{
+.herbs:hover, .oils:hover, .sups:hover,{
     box-shadow: 3px 3px 15px;
 }
 #menuitems{

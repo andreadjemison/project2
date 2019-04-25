@@ -1,0 +1,32 @@
+<main>
+    <div class="sup-container">
+        {{!-- <h2>All sups</h2> --}}
+        <a href="/sups">Return to All sups</a>
+
+        <div class="sup">
+            <a href="sups/{{_id}}">
+                <h3> {{ sup.name }} </h3>
+                <img src="{{ sup.img }}" alt="" srcset="">
+
+            </a>
+
+            <p>$ {{sup.price}} per pound </p>
+            <p>{{sup.description}}</p>
+            <ul class="ailmentlist">
+                <h3>Best Used For</h3>
+                {{#each sup.ailmentName}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+
+            <form action="/sups/{{sup.id}}?_method=put" method="POST">
+                <input type="submit" value="Modify sup" id="">
+            </form>
+            <form action="/sups/{{sup.id}}?_method=delete" method="POST">
+                <input type="submit" value="Delete sup">
+            </form>
+        </div>
+    </div>
+
+
+</main>

@@ -1,0 +1,27 @@
+<main>
+	<h2>All Essential Oils</h2>
+
+	<div class="oils-container">
+			{{#each oils}}
+		<div class="oils">
+			<a href="/oils/{{_id}}">
+				<h3> {{ name }} </h3>
+				<img src="{{ img }}" alt="" srcset="">
+
+			</a>
+						<h4>${{price}} per pound </h4>
+			{{!-- <p>{{description}}</p> --}}
+
+
+			{{!-- <ul class="ailmentlist">
+				<h3>Best Used For</h3>
+				{{#each ailmentName}}
+				<li>{{this}}</li>
+				{{/each}}
+			</ul> --}}
+
+	</div>
+	<br><br>
+	{{/each}}
+		</div>
+</main>
