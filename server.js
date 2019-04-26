@@ -31,7 +31,7 @@ app.use(logger('dev'))
 
 app.get('/', (req, res) => {
     // herbApi.allHerbs().then(herbs => {
-    res.render('herbs')
+    res.render('home')
 })
 // })
 //= =====================================================

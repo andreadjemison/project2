@@ -11,11 +11,15 @@
 <body>
 
     <nav>
-        <a href='/'>
-        <img src="/imgs/logo.png">
-            <h1> Drea's Medicinal Herb Shop</h1>
-        </a>
-
+        <div class="header">
+            <a href='/'>
+                <img src="/imgs/logo.png">
+                <h1> Drea's Medicinal Herb Shop</h1>
+            </a>
+            <a href="#">
+                <img src="/imgs/shopping.png" alt="cart" id="cart" srcset="">
+            </a>
+        </div>
         <div id="menuitems">
             <a href="/ailments">
                 Ailments
@@ -31,10 +35,34 @@
             </a>
             <br>
         </div>
+
     </nav>
-
+<main>
     {{{ body }}}
-
+</main>
+    <div class="footer">
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p> (404) 777-1111</p>
+            <p>dreaswellness@gmail.com</p>
+            <p>1111 Round There Atlanta, GA </p>
+            <p>Mon - Fri: 8am - 7pm</p>
+        </div>
+        <div class="resources">
+            <h3>Resources</h3>
+                   <p> (404) 777-1111</p>
+            <p>dreaswellness@gmail.com</p>
+            <p>1111 Round There Atlanta, GA </p>
+            <p>Mon - Fri: 8am - 7pm</p>
+        </div>
+        <div class="policies">
+            <h3>Policies</h3>
+                   <p> (404) 777-1111</p>
+            <p>dreaswellness@gmail.com</p>
+            <p>1111 Round There Atlanta, GA </p>
+            <p>Mon - Fri: 8am - 7pm</p>
+        </div>
+    </div>
     <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
     {{!-- <script type="text/javascript" src="/script.js"></script> --}}
 </body>

@@ -1,17 +1,44 @@
-@import url('https://fonts.googleapis.com/css?family=Caesar+Dressing|Lobster');
+@import url('https://fonts.googleapis.com/css?family=Caesar+Dressing|Lobster|Roboto');
 *{
     text-decoration: none;
     outline: none;
+    
 }
-html{
+html {
     margin:0;
-    /* background: rgba(0, 255,0,.2) */
+    background: #414141;
+}
+nav{
+    /* border: solid green; */
+    margin: 0;
+    /* height: 26%; */
+    position: sticky;
+    top: 0;
+    background: #414141;
+    color: white;
+    line-height: .5;
+}
+nav img{
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    /* border: solid purple;     */
+}
+#cart{
+    height: 70px;
+    width: 80px;
+    padding-right: 20px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
 }
 h1{
     color: black;
     text-shadow:green 2px 2px 5px;
     font-size: 2.6em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     /* border: solid purple; */
     font-family: 'Caesar Dressing', cursive;
 }
@@ -23,18 +50,26 @@ h2{
 
 }
 h3{
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: 'Lobster', cursive;
     color: green;
+    margin: 12px 0;
+    text-shadow: black 1px 1px 5px;
 }
 h4{
     font-size: 1.5em;
-    margin: 10px 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 6px 0;
+    /* text-shadow: black 4px 3px 15px; */
+    color: white;
+    letter-spacing: 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    text-shadow: black 1px 1px 5px;
 }
 p{
     font-weight: bolder;
     margin: 3px 10px;
+    
 }
 img{
     height: 200px;
@@ -45,6 +80,7 @@ main{
     text-align: center;
     justify-content: center;
     background: white;
+    
 }
 .herbs-container, .oils-container, .sups-container{
     display: flex;
@@ -60,13 +96,15 @@ main{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: rgb(206, 206, 206, .5);
+    background: rgba(0, 0, 0, 0.747);
     align-items: center;
     margin: 15px 20px;
     border-radius: 20px;
     padding: 5px;
     width: 300px;
+    color: black;
 }
+
 .herb-container, .oil-container, .sup-container{
     margin: 0 10%;
     background: rgb(206, 206, 206);
@@ -92,13 +130,15 @@ main{
     padding: 16px;
     text-decoration: none;
     font-size: 1.5em;
-    color: black;
+    color: white;
     font-family: 'Lobster', cursive;
+    text-shadow: green 3px 3px 9px;
 }
 nav a{
     display:flex;
     align-items:center;
-    justify-content: right;   
+    justify-content: right;  
+    color: white; 
 }
 /* #edit-form form{
     text-align: left;
@@ -119,4 +159,47 @@ nav a{
 }
 .button:hover{
     box-shadow: green 5px 5px 10px;
+}
+#container{
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    /* border: palevioletred solid; */
+}
+.home{
+    margin: 15px 10%;
+    padding: 30px;
+    border-radius: 10px;
+    background: black;
+    /* border: gray solid */
+
+}
+.home img{
+    width: 400px;
+    height: 300px;;
+}
+.footer{
+    /* height: 25%; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+/* .contact{
+    font-size: 1em;
+    margin: 20px;
+} */
+.footer p{
+    color: white;
+    padding: 2px;
+    text-shadow: black 1px 1px 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+.footer span{
+    color: green;
+    font-family: 'Lobster', cursive;
+    text-shadow: black 1px 1px 5px;
 }
