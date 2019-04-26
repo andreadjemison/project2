@@ -8,7 +8,7 @@
 
 
 		{{!-- <<<<< YOUR WHOLE FORM GOES HERE >>>>> --}}
-<form action="/{{oil.id}}?_method=PUT" method="POST">
+<form action="/oils/{{oil.id}}?_method=put" method="POST">
 	<label for="name">Name</label>
 	<input type="text" name="name" value="" id="" placeholder="{{oil.name}}">
 <br>
@@ -16,15 +16,15 @@
 	<input type="file" name="img" id="" >
 <br>
 	<label for="description">Description</label>
-	<input type="text" name="name" value="" id="" placeholder="{{oil.description}}">
+	<input type="text" name="description" value="" id="" placeholder="{{oil.description}}">
 <br>
 	<label for="price">Price</label>
 	<input type="number" name="price" value="" id="" placeholder="{{oil.price}}">
 <br>
 	<label for="ailmentName">Uses</label>
-	<input type="text" name="qty" value="" id="">
+	<input type="text" name="ailmentName" value="" id="">
 <br>
-<input type="submit" value="Create oil">
+<input type="submit" value="Update Essential Oil">
 
 </form>
 

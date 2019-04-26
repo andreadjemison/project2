@@ -6,7 +6,7 @@
         <div class="herb">
             <a href="herbs/{{_id}}">
                 <h3> {{ herb.name }} </h3>
-                <img src="{{ herb.img }}" alt="" srcset="">
+                <img src="../imgs/{{ herb.img }}" alt="" srcset="">
 
             </a>
 
@@ -18,13 +18,14 @@
                 <li>{{this}}</li>
                 {{/each}}
             </ul>
-
-            <form action="/herbs/{{herb.id}}?_method=put" method="POST">
-                <input type="submit" value="Modify Herb" id="">
-            </form>
-            <form action="/herbs/{{herb.id}}?_method=delete" method="POST">
-                <input type="submit" value="Delete Herb">
-            </form>
+            <div class="buttons">
+                <a href="/herbs/{{herb.id}}/edit">
+                    <input type="submit" value="Modify Herb" class="button">
+                </a>
+                <form action="/herbs/{{herb.id}}?_method=delete" method="POST">
+                    <input type="submit" value="Delete Herb" class="button">
+                </form>
+            </div>
         </div>
     </div>
 

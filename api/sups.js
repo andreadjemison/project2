@@ -28,8 +28,8 @@ const oneSup = (newsup) => {
     return supplementCollection.findById(newsup)
 }
 // update single oil
-const updateSup = (supid) => {
-    return supplementCollection.findByIdAndUpdate(supid)
+const updateSup = (supid, newid) => {
+    return supplementCollection.findByIdAndUpdate(supid, newid)
 }
 // delete single oil
 const deleteSup = (supid) => {

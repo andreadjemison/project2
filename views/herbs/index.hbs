@@ -2,18 +2,18 @@
 	<h2>All Herbs</h2>
 
 	<div class="herbs-container">
-			{{#each herbs}}
+		{{#each herbs}}
 		<div class="herbs">
 			<a href="/herbs/{{_id}}">
 				<h3> {{ name }} </h3>
-				<img src="{{ img }}" alt="" srcset="">
+				<img src="../imgs/{{ img }}" alt="" srcset="">
 
 			</a>
-						<h4>${{price}} per pound </h4>
-			{{!-- <p>{{description}}</p> --}}
+			<h4>${{price}} per pound </h4>
+		</div>
 
-
-			{{!-- <ul class="ailmentlist">
+		{{/each}}
+		{{!-- <ul class="ailmentlist">
 				<h3>Best Used For</h3>
 				{{#each ailmentName}}
 				<li>{{this}}</li>
@@ -22,6 +22,5 @@
 
 	</div>
 	<br><br>
-	{{/each}}
-		</div>
+
 </main>

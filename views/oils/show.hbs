@@ -6,7 +6,7 @@
         <div class="oil">
             <a href="oils/{{_id}}">
                 <h3> {{ oil.name }} </h3>
-                <img src="{{ oil.img }}" alt="" srcset="">
+                <img src="../imgs/{{ oil.img }}" alt="" srcset="">
 
             </a>
 
@@ -18,15 +18,15 @@
                 <li>{{this}}</li>
                 {{/each}}
             </ul>
-
-            <form action="/oils/{{oil.id}}?_method=put" method="POST">
-                <input type="submit" value="Modify Oil" id="">
-            </form>
-            <form action="/oils/{{oil.id}}?_method=delete" method="POST">
-                <input type="submit" value="Delete Oil">
-            </form>
+            <div class="buttons">
+                <a href="/oils/{{oil.id}}/edit">
+                    <input type="submit" value="Modify Oil" class="button">
+                </a>
+                <form action="/oils/{{oil.id}}?_method=delete" method="POST">
+                    <input type="submit" value="Delete Oil" class="button">
+                </form>
+            </div>
         </div>
     </div>
-
 
 </main>

@@ -28,8 +28,8 @@ const oneOil = (newoil) => {
     return oilCollection.findById(newoil)
 }
 // update single oil
-const updateOil = (oilid) => {
-    return oilCollection.findByIdAndUpdate(oilid)
+const updateOil = (oilid, newid) => {
+    return oilCollection.findByIdAndUpdate(oilid, newid)
 }
 // delete single oil
 const deleteOil = (oilid) => {

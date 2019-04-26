@@ -3,18 +3,15 @@
 //= =====================
 // require the herb model
 const mongoose = require('../db/connection.js')
-// const db = require('../db/herbs.js')
-// const ObjectId = mongoose.Schema.Types.ObjectId
 
 const herbSchema = new mongoose.Schema({
     name: String,
     description: String,
     img: String,
     ailmentName: Array,
-    // benefits: Array,
     price: Number,
-    // inStock: Boolean,
 })
+
 let herbCollection = mongoose.model('Herb', herbSchema)
 
 // show all herbs
@@ -30,8 +27,8 @@ const oneHerb = (newherb) => {
     return herbCollection.findById(newherb)
 }
 // update single herb
-const updateHerb = (herbid) => {
-    return herbCollection.findByIdAndUpdate(herbid)
+const updateHerb = (herbid, newid) => {
+    return herbCollection.findByIdAndUpdate(herbid, newid)
 }
 // delete single herb
 const deleteHerb = (herbid) => {
