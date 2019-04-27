@@ -58,11 +58,11 @@ app.get('/herbs', (req, res) => {
     })
 })
 
-// create new herb
+// this gets the new herb form page to render
 app.get('/herbs/new', (req, res) => {
         res.render('herbs/new')
     })
-
+// gets the new herb form inputs and adds it to herb index
 app.post('/herbs', (req, res) => {
     herbApi.newHerb(req.body)
     .then(() => {
@@ -112,10 +112,14 @@ app.get('/oils', (req, res) => {
 })
 
 // create new oil
+app.get('/oils/new', (req, res) => {
+    res.render('oils/new')
+})
+
 app.post('/oils', (req, res) => {
-    oilApi.newOil(req.body).then(() => {
-        console.log(req.body)
-        res.render('oils/new')
+    oilApi.newOil(req.body)
+    .then(() => {
+        res.redirect('/oils')
     })
 })
 
@@ -129,7 +133,7 @@ app.get('/oils/:id', (req, res) => {
 //delete single oil
 app.delete('/oils/:id', (req, res) => {
     oilApi.deleteOil(req.params.id).then(() => {
-        res.render('oils/index')
+        res.redirect('/oils')
     })
 })
 
@@ -145,7 +149,7 @@ app.get('/oils/:id/edit', (req, res) => {
 app.put('/oils/:id', (req, res) => {
     oilApi.updateOil(req.params.id, req.body)
         .then(() => {
-            res.render('oils/index',  {schema:req.body})
+            res.redirect(`/oils/${req.params.id}`)
         })
 })
 
@@ -162,10 +166,13 @@ app.get('/sups', (req, res) => {
 })
 
 // create new supplement
+app.get('/sups/new', (req, res) => {
+    res.render('sups/new')
+})
 app.post('/sups', (req, res) => {
-    supApi.newSup(req.body).then(() => {
-        console.log(req.body)
-        res.render('sups/new')
+    supApi.newSup(req.body)
+    .then(() => {
+        res.redirect('/sups')
     })
 })
 
@@ -179,7 +186,7 @@ app.get('/sups/:id', (req, res) => {
 //delete single supplement
 app.delete('/sups/:id', (req, res) => {
     supApi.deleteSup(req.params.id).then(() => {
-        res.render('sups/index')
+        res.redirect('/sups')
     })
 })
 
@@ -194,7 +201,7 @@ app.get('/sups/:id/edit', (req, res) => {
 app.put('/sups/:id', (req, res) => {
     supApi.updateSup(req.params.id, req.body)
         .then(() => {
-            res.render('sups/index',  {schema:req.body})
+            res.redirect(`/sups/${req.params.id}`)
         })
 })
 
