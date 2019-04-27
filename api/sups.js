@@ -1,10 +1,4 @@
-//= =====================
-// REQUIREMENTS
-//= =====================
-// require the oil model
 const mongoose = require('../db/connection.js')
-// const db = require('../db/Oils.js')
-// const ObjectId = mongoose.Schema.Types.ObjectId
 
 const supplementSchema = new mongoose.Schema({
     name: String,

@@ -1,7 +1,3 @@
-//= =====================
-// REQUIREMENTS
-//= =====================
-// require the herb model
 const mongoose = require('../db/connection.js')
 
 const herbSchema = new mongoose.Schema({
