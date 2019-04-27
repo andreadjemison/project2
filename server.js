@@ -16,6 +16,7 @@ const logger = require('morgan')
 const herbApi = require('./api/herbs.js')
 const oilApi = require('./api/oils.js')
 const supApi = require('./api/sups.js')
+const ailApi = require('./api/ailments.js')
 
 //= =====================
 // MIDDLEWARE
@@ -202,6 +203,59 @@ app.put('/sups/:id', (req, res) => {
     supApi.updateSup(req.params.id, req.body)
         .then(() => {
             res.redirect(`/sups/${req.params.id}`)
+        })
+})
+
+//= =====================================================
+// AILMENTS
+//= =====================================================
+
+// list/ index of all supplements
+app.get('/ailments', (req, res) => {
+    ailApi.allAilments().then(ailments => {
+        console.log(ailApi.allAilments())
+        res.render('ailments/index', { ailments })
+    })
+})
+
+// create new supplement
+app.get('/ailments/new', (req, res) => {
+    res.render('ailments/new')
+})
+app.post('/ailments', (req, res) => {
+    ailApi.newAilment(req.body)
+    .then(() => {
+        res.redirect('/ailments')
+    })
+})
+
+// show single supplement
+app.get('/ailments/:id', (req, res) => {
+    ailApi.oneAilment(req.params.id)
+    .then(ailment => {
+        res.render('ailment/show', { ailment })
+    })
+})
+
+//delete single supplement
+app.delete('/ailments/:id', (req, res) => {
+    ailApi.deleteAilment(req.params.id).then(() => {
+        res.redirect('/ailments')
+    })
+})
+
+//update single supplement
+app.get('/ailments/:id/edit', (req, res) => {
+    ailApi.oneAilment(req.params.id)
+    .then(ailment => {
+        res.render('ailments/edit', { ailment })
+    })
+})
+
+app.put('/ailments/:id', (req, res) => {
+    ailApi.updateAilment(req.params.id, req.body)
+        .then(() => {
+            res.redirect(`/ailments/${req.params.id}`)
         })
 })
 

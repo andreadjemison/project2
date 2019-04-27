@@ -4,7 +4,7 @@ const ObjectId = mongoose.Schema.Types.ObjectId
 
 // create schemas:
 const ailmentSchema = new mongoose.Schema({
-    name: String,
+    ailmentName: String,
     description: String,
     img: String,
     herbId: ObjectId,
