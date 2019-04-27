@@ -12,7 +12,7 @@ let newSups = [
         name: 'Moringa Oil',
         description: 'The Moringa oil benefits are numerous. India’s ancient tradition of Ayurveda says that the properties in the various parts of the Moringa tree prevent 300 diseases. Modern science confirms the basic notion, as the leaves are packed with health promoting properties. Scientific research has proven that it has a very high nutritional value. Moringa contains 90 different types of nutrients, 46 antioxidants, proteins and 36 anti-inflammatory agents.',
         img: 'moringa.jpg',
-        ailmentName: ['Moisturizer', 'Anti-Aging', 'Even Skin Tone', 'Stretch Marks', 'Inflammation', 'Dark Cirles', 'Sunburn', 'Dandruff'],
+        ailmentName: ['Moisturizer', 'Anti-Aging', 'Even Skin Tone', 'Stretch Marks', 'Inflammation', 'Dark Circles', 'Sunburn', 'Dandruff'],
         price: 20,
         // inStock: Boolean
     },    {
@@ -26,7 +26,7 @@ let newSups = [
         name: 'Oregano Oil',
         description: 'Oregano oil is a powerful, plant-derived essential oil that may rival antibiotics when it comes to treating or preventing various infections. In fact, it contains properties that are antibacterial, antiviral and antifungal.  And oregano essential oil is unlikely to cause many of the harmful side effects that are commonly attributed to high use of antibiotics — such as increased risk for antibiotic resistance, poor gut health due to destroying beneficial probiotic bacteria, reduced vitamin absorption and leaky gut syndrome due to damage of the GI tract’s lining.',
         img: 'oregano.jpg',
-        ailmentName: ['Gingivitis', 'Yeast Infections', 'UTI', 'Bronchitis', 'Sinitus', 'Inflammation', 'Allergies', 'Parasites', 'Virus'],
+        ailmentName: ['Gingivitis', 'Yeast Infections', 'UTI', 'Bronchitis', 'Sinusitis', 'Inflammation', 'Allergies', 'Parasites', 'Virus'],
         price: 20,
     //     // inStock: Boolean
     },    {

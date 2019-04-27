@@ -2,11 +2,17 @@
 // REQUIREMENTS
 //= =====================
 
+// lets us know we are using express
 const express = require('express')
+
+// this invokes the function of express
 const app = express()
+
+// for use in forms since those are only POST & GET
 const methodOverride = require('method-override')
+// logger
 const logger = require('morgan')
-// const routes = require('./routes/index')
+// imported apis & schemas from each model
 const herbApi = require('./api/herbs.js')
 const oilApi = require('./api/oils.js')
 const supApi = require('./api/sups.js')
@@ -14,23 +20,29 @@ const supApi = require('./api/sups.js')
 //= =====================
 // MIDDLEWARE
 //= =====================
+// body parser(req.body) for classic encoding if false
 app.use(express.urlencoded({ extended: true }))
+
+// body parser using JSON
 app.use(express.json())
+
+// for use in forms since those are only POST & GET
 app.use(methodOverride('_method'))
+
+// to link css
 app.use('/public', express.static("public"))
+
+// to link image folder
 app.use('/imgs', express.static('imgs'))
 
-
+// to run handlebars
 app.set('view engine', 'hbs')
-
 
 // Logger provides extra information in our Node console about each request being made.
 app.use(logger('dev'))
 
-
-
+// renders home page for entire website
 app.get('/', (req, res) => {
-    // herbApi.allHerbs().then(herbs => {
     res.render('home')
 })
 // })
@@ -47,10 +59,14 @@ app.get('/herbs', (req, res) => {
 })
 
 // create new herb
-app.post('/herbs', (req, res) => {
-    herbApi.newHerb(req.body).then(() => {
-        console.log(req.body)
+app.get('/herbs/new', (req, res) => {
         res.render('herbs/new')
+    })
+
+app.post('/herbs', (req, res) => {
+    herbApi.newHerb(req.body)
+    .then(() => {
+        res.redirect('/herbs')
     })
 })
 
@@ -64,7 +80,7 @@ app.get('/herbs/:id', (req, res) => {
 //delete single herb
 app.delete('/herbs/:id', (req, res) => {
     herbApi.deleteHerb(req.params.id).then(() => {
-        res.render('herbs/index')
+        res.redirect('/herbs')
     })
 })
 
@@ -79,7 +95,7 @@ app.get('/herbs/:id/edit', (req, res) => {
 app.put('/herbs/:id', (req, res) => {
     herbApi.updateHerb(req.params.id, req.body)
         .then(() => {
-            res.render('herbs/index',  {schema:req.body})
+            res.redirect(`/herbs/${req.params.id}`)
         })
 })
 

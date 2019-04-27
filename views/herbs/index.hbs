@@ -1,28 +1,33 @@
 <div class="background">
-<main>
-	<h2>All Herbs</h2>
+	<d>
+		<h2>All Herbs</h2>
 
-	<div class="herbs-container">
-		{{#each herbs}}
-		<div class="herbs">
-			<a href="/herbs/{{_id}}">
-				<h3> {{ name }} </h3>
-				<img src="../imgs/{{ img }}" alt="" srcset="">
+		<div class="herbs-container">
+			{{#each herbs}}
+			<div class="herbs">
+				<a href="/herbs/{{_id}}">
+					<h3> {{ name }} </h3>
+					<img src="../imgs/{{ img }}" alt="" srcset="">
 
-			</a>
-			<h4>${{price}} per pound </h4>
-		</div>
+				</a>
+				<h4>${{price}} per pound </h4>
+			</div>
 
-		{{/each}}
-		{{!-- <ul class="ailmentlist">
+			{{/each}}
+			{{!-- <ul class="ailmentlist">
 				<h3>Best Used For</h3>
 				{{#each ailmentName}}
 				<li>{{this}}</li>
 				{{/each}}
 			</ul> --}}
 
-	</div>
-	<br><br>
-
-</main>
+		</div>
+		<br><br>
+		{{!-- <form action="" method="post"></form> --}}
+		<div class="create">
+			<p>Didn't Find What You Were Looking For?</p>
+			<a href="/herbs/new">
+				<input type="submit" value="Request New Herb">
+			</a>
+		</div>
 </div>

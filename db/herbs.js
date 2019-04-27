@@ -5,7 +5,7 @@ let newHerbs = [
         name: 'Chlorella',
         description: 'Chlorella is a single-cell green algae containing the green photosynthetic pigments chlorophyll-a and -b in its chloroplast.',
         img: 'chlorella.jpg',
-        ailmentName: ['cancer prevention', 'detoxification', 'fibromyalgia', 'radiation treatment side effects', 'stimulates the immune system', 'colds', 'protecting the body against toxic metals', 'slowing the aging process'],
+        ailmentName: ['Cancer', 'detoxification', 'fibromyalgia', 'radiation treatment side effects', 'stimulates the immune system', 'colds', 'protecting the body against toxic metals', 'slowing the aging process'],
         price: 20,
         // inStock: Boolean
     },    {
