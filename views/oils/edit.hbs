@@ -1,36 +1,37 @@
 <main>
+	<div class="herb-container edit">
+		<h2>Edit Oil!</h2>
 
-	<h2>EDIT OIL!</h2>
-
-	<a href="/oils/{{oil.id}}">Return to oil</a>
-
-	<div id="edit-form" class="oil-container-show">
+		<a id='returnlink'  href="/oils/{{oil.id}}">Return to oil</a>
+<br><br>
+		<div id="edit-form" class="oil-container-show">
 
 
-		{{!-- <<<<< YOUR WHOLE FORM GOES HERE >>>>> --}}
-<form action="/oils/{{oil.id}}?_method=put" method="POST">
-	<label for="name">Name</label>
-	<input type="text" name="name" value="" id="" placeholder="{{oil.name}}">
-<br>
-	<label for="img">Image</label>
-	<input type="file" name="img" id="" >
-<br>
-	<label for="description">Description</label>
-	<input type="text" name="description" value="" id="" placeholder="{{oil.description}}">
-<br>
-	<label for="price">Price</label>
-	<input type="number" name="price" value="" id="" placeholder="{{oil.price}}">
-<br>
-	<label for="ailmentName">Uses</label>
-	<input type="text" name="ailmentName" value="" id="">
-<br>
-<input type="submit" value="Update Essential Oil">
+			{{!-- <<<<< YOUR WHOLE FORM GOES HERE >>>>> --}}
+			<form action="/oils/{{oil.id}}?_method=put" method="POST">
+				<label for="name">Name</label>
+				<input type="text" name="name" value="" id="" placeholder="{{oil.name}}">
+				<br>
+				<label for="img">Image</label>
+				<input type="file" name="img" id="">
+				<br>
+				<label for="description">Description</label>
+				<input type="text" name="description" value="" id="" placeholder="{{oil.description}}">
+				<br>
+				<label for="price">Price</label>
+				<input type="number" name="price" value="" id="" placeholder="{{oil.price}}">
+				<br>
+				<label for="ailmentName">Uses</label>
+				<input type="text" name="ailmentName" value="" id="" placeholder="{{oil.ailmentName}}">
+				<br>
+				<input class="button"  type="submit" value="Update Essential Oil">
 
-</form>
+			</form>
 
-		<div id="img-preview">
-			<img src="../../imgs/{{oil.img}}">
+			<div id="img-preview">
+				<img src="../../imgs/{{oil.img}}">
+			</div>
+
 		</div>
-
 	</div>
 </main>

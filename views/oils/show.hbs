@@ -1,19 +1,19 @@
 <main>
     <div class="oil-container">
         {{!-- <h2>All oils</h2> --}}
-        <a href="/oils">Return to All oils</a>
-
+        <a id='returnlink'  href="/oils">Return to All Essential Oils</a>
+<br>
         <div class="oil">
             <a href="oils/{{_id}}">
-                <h3> {{ oil.name }} </h3>
+                <h3  id="nameone"> {{ oil.name }} </h3>
                 <img src="../imgs/{{ oil.img }}" alt="" srcset="">
 
             </a>
 
-            <p>$ {{oil.price}} per pound </p>
+            <h5>$ {{oil.price}} per pound </h5>
             <p>{{oil.description}}</p>
             <ul class="ailmentlist">
-                <h3>Best Used For</h3>
+                <h3  id="usedfor">Best Used For</h3>
                 {{#each oil.ailmentName}}
                 <li>{{this}}</li>
                 {{/each}}

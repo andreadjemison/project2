@@ -1,38 +1,39 @@
 <div class="background">
-<main>
+	<main>
+		<div class="herb-container edit">
+			<h2>Edit Herb!</h2>
 
-	<h2>EDIT HERB!</h2>
-
-	<a href="/herbs/{{herb.id}}">Return to Herb</a>
-
-	<div id="edit-form" class="herb-container-show">
+			<a id='returnlink' href="/herbs/{{herb.id}}">Return to Herb</a>
+			<br><br>
+			<div id="edit-form" class="herb-container-show">
 
 
-		{{!-- <<<<< YOUR WHOLE FORM GOES HERE >>>>> --}}
-<form action="/herbs/{{herb.id}}?_method=put" method="POST">
-	<label for="name">Name</label>
-	<input type="text" name="name" id="" placeholder="{{herb.name}}">
-<br>
-	<label for="img">Image</label>
-	<input type="file" name="img" id="" >
-<br>
-	<label for="description">Description</label>
-	<input type="text" name="description" id="" placeholder="{{herb.description}}">
-<br>
-	<label for="price">Price</label>
-	<input type="number" name="price"  id="" placeholder="{{herb.price}}">
-<br>
-	<label for="ailmentName">Uses</label>
-	<input type="text" name="ailmentName" id="" placeholder="{{herb.ailmentName}}">
-<br>
-<input type="submit" value="Update herb">
+				{{!-- <<<<< YOUR WHOLE FORM GOES HERE >>>>> --}}
+				<form action="/herbs/{{herb.id}}?_method=put" method="POST">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="" placeholder="{{herb.name}}">
+					<br>
+					<label for="img">Image</label>
+					<input type="file" name="img" id="">
+					<br>
+					<label for="description">Description</label>
+					<input type="text" name="description" id="" placeholder="{{herb.description}}">
+					<br>
+					<label for="price">Price</label>
+					<input type="number" name="price" id="" placeholder="{{herb.price}}">
+					<br>
+					<label for="ailmentName">Uses</label>
+					<input type="text" name="ailmentName" id="" placeholder="{{herb.ailmentName}}">
+					<br>
+					<input class="button" type="submit" value="Update Herb">
 
-</form>
+				</form>
 
-		<div id="img-preview">
-			<img src="../../imgs/{{herb.img}}">
-		</div>
+				<div id="img-preview">
+					<img src="../../imgs/{{herb.img}}">
+				</div>
 
-	</div>
-</main>
+			</div>
+	</main>
+</div>
 </div>

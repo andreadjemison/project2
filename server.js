@@ -51,10 +51,11 @@ app.get('/', (req, res) => {
 // HERBS
 //= =====================================================
 
-// list/ index of all herbs
+// list index of all herbs
 app.get('/herbs', (req, res) => {
-    herbApi.allHerbs().then(herbs => {
-        console.log(herbApi.allHerbs())
+    herbApi.allHerbs()
+    .then(herbs => {
+        console.log(herbApi.allHerbs(req.body))
         res.render('herbs/index', { herbs })
     })
 })
@@ -210,41 +211,40 @@ app.put('/sups/:id', (req, res) => {
 // AILMENTS
 //= =====================================================
 
-// list/ index of all supplements
+// list/ index of all ailments
 app.get('/ailments', (req, res) => {
     ailApi.allAilments().then(ailments => {
-        console.log(ailApi.allAilments())
+        // console.log(ailApi.allAilments())
         res.render('ailments/index', { ailments })
     })
 })
 
-// create new supplement
+// create new ailment
 app.get('/ailments/new', (req, res) => {
     res.render('ailments/new')
 })
+
 app.post('/ailments', (req, res) => {
-    ailApi.newAilment(req.body)
-    .then(() => {
+    ailApi.newAilment(req.body).then(() => {
         res.redirect('/ailments')
     })
 })
 
-// show single supplement
+// show single ailment
 app.get('/ailments/:id', (req, res) => {
-    ailApi.oneAilment(req.params.id)
-    .then(ailment => {
-        res.render('ailment/show', { ailment })
+    ailApi.oneAilment(req.params.id).then(ailment => {
+        res.render('ailments/show', { ailment })
     })
 })
 
-//delete single supplement
+//delete single ailment
 app.delete('/ailments/:id', (req, res) => {
     ailApi.deleteAilment(req.params.id).then(() => {
         res.redirect('/ailments')
     })
 })
 
-//update single supplement
+//update single ailment
 app.get('/ailments/:id/edit', (req, res) => {
     ailApi.oneAilment(req.params.id)
     .then(ailment => {
@@ -263,3 +263,19 @@ let PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
     console.log('working')
 })
+
+//   console.log(herbApi.allHerbs())
+//   for(let i=0; i<oil.ailmentName.length; i++){
+//     if (ailment.ailmentName === oil.ailmentName){
+//       return oilCollection.find()
+//     }
+//   }
+//   for(let i=0; i<sup.ailmentName.length; i++){
+//     if (ailment.ailmentName === sup.ailmentName){
+//       return supplementCollection.find()
+//     }
+//   }
+// console.log(herbApi.allHerbs(ailApi.oneAilment(`${id}`)))
+// console.log(herbApi.allHerbs().length)
+// console.log(herbApi.allHerbs())
+// console.log(herbApi.allHerbs(req.body))

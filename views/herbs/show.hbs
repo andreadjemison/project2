@@ -1,23 +1,25 @@
 <main>
     <div class="herb-container">
         {{!-- <h2>All Herbs</h2> --}}
-        <a href="/herbs">Return to All Herbs</a>
-
+        <a id='returnlink' href="/herbs">Return to All Herbs</a>
+<br>
         <div class="herb">
             <a href="herbs/{{_id}}">
-                <h3> {{ herb.name }} </h3>
+                <h3 id="nameone"> {{ herb.name }} </h3>
                 <img src="../imgs/{{ herb.img }}" alt="" srcset="">
 
             </a>
 
-            <p>$ {{herb.price}} per pound </p>
+            <h5>${{herb.price}} per pound </h5>
             <p>{{herb.description}}</p>
+
             <ul class="ailmentlist">
-                <h3>Best Used For</h3>
+                <h3 id="usedfor">Best Used For</h3>
                 {{#each herb.ailmentName}}
                 <li>{{this}}</li>
                 {{/each}}
             </ul>
+
             <div class="buttons">
                 <a href="/herbs/{{herb.id}}/edit">
                     <input type="submit" value="Modify Herb" class="button">

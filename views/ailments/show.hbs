@@ -1,33 +1,76 @@
 <main>
     <div class="herb-container">
         {{!-- <h2>All Herbs</h2> --}}
-        <a href="/herbs">Return to All Herbs</a>
-
-        <div class="herb">
-            <a href="herbs/{{_id}}">
-                <h3> {{ herb.name }} </h3>
-                <img src="../imgs/{{ herb.img }}" alt="" srcset="">
-
-            </a>
-
-            <p>$ {{herb.price}} per pound </p>
-            <p>{{herb.description}}</p>
-            <ul class="ailmentlist">
-                <h3>Best Used For</h3>
-                {{#each herb.ailmentName}}
-                <li>{{this}}</li>
-                {{/each}}
-            </ul>
-            <div class="buttons">
-                <a href="/herbs/{{herb.id}}/edit">
-                    <input type="submit" value="Modify Herb" class="button">
+        <a id='returnlink' href="/ailments">Return to All Ailments and Benefits</a>
+        <br><br>
+        <div class="herb ailment">
+            <h3 id="nameone"> {{ ailment.ailmentName }} </h3>
+            <div class="buttons ailbuttons">
+                <a href="/ailments/{{ailment.id}}/edit">
+                    <input type="submit" value="Modify Ailment" class="button">
                 </a>
-                <form action="/herbs/{{herb.id}}?_method=delete" method="POST">
-                    <input type="submit" value="Delete Herb" class="button">
+                <form action="/ailments/{{ailment.id}}?_method=delete" method="POST">
+                    <input type="submit" value="Delete Ailment" class="button">
                 </form>
             </div>
+            <img src="../imgs/{{ ailment.img }}" alt="" srcset="">
+            <p>{{ailment.description}}</p>
+
+            {{!-- <ul class="ailmentlist">
+                {{#each herbs}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul> --}}
+
         </div>
     </div>
+    <h3>Herbs for {{ailment.ailmentName}}</h3>
+    <div class="herbs-container ailmentherbs">
 
+        {{!-- {{#lookup ailment.ailmentName }} --}}
 
+        {{#each ailment}}
+        <div class="herbs">
+            <a href="/herbs/{{_id}}">
+                <h3> {{ herb.name }} </h3>
+                <img src="../imgs/{{ herb.img }}" alt="" srcset="">
+            </a>
+            {{!-- <h4>${{price}} per pound </h4> --}}
+        </div>
+        {{!-- <p>yea</p> --}}
+        {{/each}}
+        {{!-- {{/lookup}} --}}
+    </div>
+    <h3>Essential Oils for {{ailment.ailmentName}}</h3>
+    <div class="herbs-container ailmentherbs">
+
+        {{!-- {{#lookup ailment.ailmentName }} --}}
+
+        {{#each ailment}}
+        <div class="herbs">
+            <a href="/herbs/{{_id}}">
+                <h3> {{ herb.name }} </h3>
+                <img src="../imgs/{{ herb.img }}" alt="" srcset="">
+            </a>
+            {{!-- <h4>${{price}} per pound </h4> --}}
+        </div>
+        {{!-- <p>yea</p> --}}
+        {{/each}}
+        {{!-- {{/lookup}} --}}
+    </div>
+    <h3>Supplements for {{ailment.ailmentName}}</h3>
+    <div class="herbs-container ailmentherbs">
+
+        {{!-- {{#lookup ailment.ailmentName }} --}}
+
+        {{#each ailment}}
+        <div class="herbs">
+            <a href="/herbs/{{_id}}">
+                <h3> {{ herb.name }} </h3>
+                <img src="../imgs/{{ herb.img }}" alt="" srcset="">
+            </a>
+        </div>
+        {{/each}}
+        {{!-- {{/lookup}} --}}
+    </div>
 </main>

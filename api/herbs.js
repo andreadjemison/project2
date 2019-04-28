@@ -4,7 +4,7 @@ const herbSchema = new mongoose.Schema({
     name: String,
     description: String,
     img: String,
-    ailmentName: Array,
+    ailmentName: [String],
     price: Number,
 })
 
@@ -31,6 +31,9 @@ const deleteHerb = (herbid) => {
     return herbCollection.findByIdAndRemove(herbid)
 }
 
+const filterHerb = (ailmentName) => {
+    return herbCollection.insertMany(ailmentName)
+}
 
 // export the controller with module.exports
 module.exports = {
@@ -38,5 +41,6 @@ module.exports = {
     newHerb,
     oneHerb,
     updateHerb,
-    deleteHerb
+    deleteHerb,
+    filterHerb
 }

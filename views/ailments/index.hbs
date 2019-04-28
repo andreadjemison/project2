@@ -1,26 +1,18 @@
 <div class="background">
 	<d>
-		<h2>All Herbs</h2>
+		<h2>Search By Ailment or Benefit</h2>
 
 		<div class="herbs-container">
-			{{#each herbs}}
+			{{#each ailments}}
 			<div class="herbs">
-				<a href="/herbs/{{_id}}">
-					<h3> {{ name }} </h3>
+				<a href="/ailments/{{_id}}">
+					<h3> {{ ailmentName }} </h3>
 					<img src="../imgs/{{ img }}" alt="" srcset="">
-
 				</a>
-				<h4>${{price}} per pound </h4>
+				{{!-- <h4>${{price}} per pound </h4> --}}
 			</div>
 
 			{{/each}}
-			{{!-- <ul class="ailmentlist">
-				<h3>Best Used For</h3>
-				{{#each ailmentName}}
-				<li>{{this}}</li>
-				{{/each}}
-			</ul> --}}
-
 		</div>
 		<br><br>
 		{{!-- <form action="" method="post"></form> --}}
