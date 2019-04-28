@@ -30,6 +30,9 @@ const updateHerb = (herbid, newid) => {
 const deleteHerb = (herbid) => {
     return herbCollection.findByIdAndRemove(herbid)
 }
+const deleteAllHerbs = (herbs) => {
+    return herbCollection.deleteMany(herbs)
+}
 
 const filterHerb = (ailmentName) => {
     return herbCollection.insertMany(ailmentName)
@@ -42,5 +45,6 @@ module.exports = {
     oneHerb,
     updateHerb,
     deleteHerb,
+    deleteAllHerbs,
     filterHerb
 }

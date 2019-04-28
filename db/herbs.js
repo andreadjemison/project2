@@ -20,7 +20,7 @@ let newHerbs = [
     }, {
         name: 'Aloe Vera',
         description: 'Chlorella is a single-cell green algae containing the green photosynthetic pigments chlorophyll-a and -b in its chloroplast.',
-        img: 'chlorella.jpg',
+        img: 'aloe.jpg',
         ailmentName: [
             'Cancer',
             'detoxification',
@@ -36,7 +36,7 @@ let newHerbs = [
     }, {
         name: 'Anise',
         description: 'Chlorella is a single-cell green algae containing the green photosynthetic pigments chlorophyll-a and -b in its chloroplast.',
-        img: 'chlorella.jpg',
+        img: 'anise.jpeg',
         ailmentName: [
             'Cancer',
             'detoxification',
@@ -67,7 +67,7 @@ let newHerbs = [
     }, {
         name: 'Bee Pollen',
         description: 'Sweet violet is sometimes applied directly to the skin for skin disorders and as a skin cleanser. In herbal combinations, sweet violet is used for breathing problems including sudden (acute) and ongoing (chronic) bronchitis, asthma, emphysema, “dust-damaged” lungs, swelling (inflammation) of the respiratory tract, cold and flu symptoms, hoarseness, cough, and chest congestion. These herbal combinations are also used for involuntary urination (incontinence) in older people, bed-wetting, irritable bladder, and prostate conditions.',
-        img: 'banafsha.jpg',
+        img: 'beepollen.jpg',
         ailmentName: [
             'Inflammation',
             'Insomnia',
@@ -126,7 +126,7 @@ let newHerbs = [
     }, {
         name: 'Bramhi',
         description: 'Burdock root has been used for centuries in holistic medicine to treat a variety of different conditions. Traditionally, it was most commonly used as a diuretic and a digestive aid.',
-        img: 'burdock.jpg',
+        img: 'brahmi.jpg',
         ailmentName: [
             'Diabetes',
             'Infections',
@@ -140,7 +140,7 @@ let newHerbs = [
     }, {
         name: 'Cardamom',
         description: 'Burdock root has been used for centuries in holistic medicine to treat a variety of different conditions. Traditionally, it was most commonly used as a diuretic and a digestive aid.',
-        img: 'burdock.jpg',
+        img: 'cardamom.jpg',
         ailmentName: [
             'Diabetes',
             'Infections',
@@ -188,7 +188,7 @@ let newHerbs = [
     }, {
         name: 'Cohosh',
         description: 'Chlorella is a single-cell green algae containing the green photosynthetic pigments chlorophyll-a and -b in its chloroplast.',
-        img: 'chlorella.jpg',
+        img: 'cohosh.jpg',
         ailmentName: [
             'Cancer', 
             'detoxification', 
@@ -204,7 +204,7 @@ let newHerbs = [
     }, {
         name: 'Dong Quai',
         description: 'Chlorella is a single-cell green algae containing the green photosynthetic pigments chlorophyll-a and -b in its chloroplast.',
-        img: 'chlorella.jpg',
+        img: 'dongquai.jpeg',
         ailmentName: [
             'Cancer', 
             'detoxification', 

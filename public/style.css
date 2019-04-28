@@ -123,7 +123,7 @@ main{
     background: black;
 }
 .home img{
-    width: 400px;
+    width: 500px;
     height: 300px;
 }
 /* =============ailments page================ */
@@ -169,6 +169,26 @@ main{
 }
 .herbs:hover, .oils:hover, .sups:hover{
     box-shadow: 3px 3px 15px;
+}
+.forms{
+    display: flex;
+    justify-content: space-around;
+}
+.create, .deleteall {
+ background: black;
+ border-radius: 15px;
+ margin: 10px 10%;
+ padding: 30px 0;
+}
+#createbutton{
+    background: green;
+    border: none;
+    color: black;
+}
+#createbutton:hover{
+    background: white;
+    color: black;
+    box-shadow: green 4px 4px 30px 
 }
 /* =============single product================ */
 .herb-container, .oil-container, .sup-container{
