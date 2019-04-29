@@ -1,17 +1,20 @@
 # Overview
 At Drea's Medicinal Herb Shop, we strive to give the best quality herbs and also helpful suggestions to alleviate any ailment you or your loved one may have.
 <br><br>
-## Happy Shopping!
+<!-- ## Happy Shopping! -->
 
-# Project Planning - Trello
-[Trello link](https://trello.com/b/immpbyRT/sei-project-2)
+# Trello & Heroku
+[Trello Board](https://trello.com/b/immpbyRT/sei-project-2)
+<br>
+[Deployed Heroku App](https://serene-peak-93613.herokuapp.com/)
+
 
 # Wireframes
-![alt text](imgs/erd.jpg){ width="500px"}
-![alt text](imgs/p2home.jpg){ width="500px"}
-![alt text](imgs/index.jpg){ width="500px"}
-![alt text](imgs/show.jpg){ width="500px"}
-![alt text](imgs/edit.jpg){ width="500px"}
+![mdimg](imgs/erd.jpg)
+![mdimg](imgs/p2home.jpg)
+![mdimg](imgs/index.jpg)
+![mdimg](imgs/show.jpg)
+![mdimg](imgs/edit.jpg)
 <!-- ![alt text](imgs/new.jpg) -->
 
 # References Used
@@ -28,9 +31,6 @@ Handlebars <br>
 Express <br>
 MongoDB <br>
 Mongoose <br>
-
-# Deployment
-[Heroku](https://serene-peak-93613.herokuapp.com/)
 
 # Next Version
 Functioning Shopping Cart
