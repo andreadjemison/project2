@@ -1,5 +1,5 @@
 # Overview
-At Drea's Medicinal Herb Shop, we strive to give the best quality herbs and also helpful suggestions to aleviate any ailment you or your loved one may have.
+At Drea's Medicinal Herb Shop, we strive to give the best quality herbs and also helpful suggestions to alleviate any ailment you or your loved one may have.
 <br><br>
 ## Happy Shopping!
 
@@ -7,16 +7,18 @@ At Drea's Medicinal Herb Shop, we strive to give the best quality herbs and also
 [Trello link](https://trello.com/b/immpbyRT/sei-project-2)
 
 # Wireframes
+![alt text](imgs/erd.jpg)
 ![alt text](imgs/p2home.jpg)
-<!-- ![alt text](wireframes/themes.jpg)
-![alt text](wireframes/gameboard.jpg)
-![alt text](wireframes/questions.jpg)
-![alt text](wireframes/dailydouble.jpg) -->
+![alt text](imgs/index.jpg)
+![alt text](imgs/show.jpg)
+![alt text](imgs/edit.jpg)
+<!-- ![alt text](imgs/new.jpg) -->
 
 # References Used
 [Starwest Botanicals](https://www.starwest-botanicals.com/) <br>
 [Mountain Rose Herbs](https://www.mountainroseherbs.com/) <br>
 [The Herb Shop](https://bulkherbshop.com/)<br>
+[Aromatherapy](http://www.aromatherapy.com/most_popular.html) <br>
 
 # Technologies Used
 <!-- HTML5 <br> -->
@@ -31,4 +33,4 @@ Mongoose <br>
 [Heroku](https://serene-peak-93613.herokuapp.com/)
 
 # Next Version
-
+Functioning Shopping Cart
