@@ -7,11 +7,11 @@ At Drea's Medicinal Herb Shop, we strive to give the best quality herbs and also
 [Trello link](https://trello.com/b/immpbyRT/sei-project-2)
 
 # Wireframes
-![alt text](imgs/erd.jpg)
-![alt text](imgs/p2home.jpg)
-![alt text](imgs/index.jpg)
-![alt text](imgs/show.jpg)
-![alt text](imgs/edit.jpg)
+![alt text](imgs/erd.jpg){ width="500px"}
+![alt text](imgs/p2home.jpg){ width="500px"}
+![alt text](imgs/index.jpg){ width="500px"}
+![alt text](imgs/show.jpg){ width="500px"}
+![alt text](imgs/edit.jpg){ width="500px"}
 <!-- ![alt text](imgs/new.jpg) -->
 
 # References Used
