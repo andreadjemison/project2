@@ -19,33 +19,33 @@ let newHerbs = [
         //     // inStock: Boolean{
     }, {
         name: 'Aloe Vera',
-        description: 'Chlorella is a single-cell green algae containing the green photosynthetic pigments chlorophyll-a and -b in its chloroplast.',
+        description: 'Aloe vera produces two substances used for medicine: The gel is obtained from the cells in the center of the leaf, and the latex is obtained from the cells just beneath the leaf skin. For constipation take 100–200 milligrams of aloe vera daily. For wound healing, psoriasis and other skin infections, use 0.5 percent aloe extract cream three times daily. For dental plaque and gum disease, use a toothpaste that contains aloe vera for 24 weeks.',
         img: 'aloe.jpg',
         ailmentName: [
-            'Cancer',
-            'detoxification',
-            'fibromyalgia',
-            'radiation treatment side effects',
-            'stimulates the immune system',
-            'colds',
-            'protecting the body against toxic metals',
-            'slowing the aging process'
+            'Sunburn',
+            'Frostbite',
+            'Psoriasis',
+            'Cold Sores',
+            'Arthritis',
+            'Inflammtion',
+            'Diabetes',
+            'Depression'
         ],
         price: 20,
         // inStock: Boolean
     }, {
         name: 'Anise',
-        description: 'Chlorella is a single-cell green algae containing the green photosynthetic pigments chlorophyll-a and -b in its chloroplast.',
+        description: 'The oil produced from star anise contains thymol, terpineol and anethole, which is used for treating cough and flu. Anise also helps improve digestion, alleviate cramps and reduce nausea. Consuming star anise tea after meals helps treat digestive ailments such as bloating, gas, indigestion and constipation. ',
         img: 'anise.jpeg',
         ailmentName: [
-            'Cancer',
-            'detoxification',
-            'fibromyalgia',
-            'radiation treatment side effects',
-            'stimulates the immune system',
-            'colds',
-            'protecting the body against toxic metals',
-            'slowing the aging process'
+            'Hair Growth',
+            'Menstruation',
+            'Gas Reliever',
+            'High Blood Pressure',
+            'Toothache',
+            'Digestion',
+            'Inflammation',
+            'Anti-Septic'
         ],
         price: 20,
         // inStock: Boolean
@@ -66,16 +66,16 @@ let newHerbs = [
         //     // inStock: Boolean
     }, {
         name: 'Bee Pollen',
-        description: 'Sweet violet is sometimes applied directly to the skin for skin disorders and as a skin cleanser. In herbal combinations, sweet violet is used for breathing problems including sudden (acute) and ongoing (chronic) bronchitis, asthma, emphysema, “dust-damaged” lungs, swelling (inflammation) of the respiratory tract, cold and flu symptoms, hoarseness, cough, and chest congestion. These herbal combinations are also used for involuntary urination (incontinence) in older people, bed-wetting, irritable bladder, and prostate conditions.',
+        description: 'A complete protein, rich in vitamins, minerals, enzymes, amino acids and anti-oxidants, it is considered an immune system builder that will also enhance vitality. Bee pollen is a great brain booster, lifting brain fatigue, improving alertness and helping concentration levels over an extended period of time.',
         img: 'beepollen.jpg',
         ailmentName: [
+            'Allergies',
             'Inflammation',
-            'Insomnia',
-            'Heartburn',
-            'Gas',
-            'Hot Flashes',
-            'Depression',
-            'Irritability'
+            'Liver Health',
+            'Immune Booster',
+            'Menopause',
+            'Stress',
+            'Alcoholism'
         ],
         price: 20,
         //     // inStock: Boolean
@@ -128,26 +128,27 @@ let newHerbs = [
         description: 'Burdock root has been used for centuries in holistic medicine to treat a variety of different conditions. Traditionally, it was most commonly used as a diuretic and a digestive aid.',
         img: 'brahmi.jpg',
         ailmentName: [
+            'Brain Function',
+            'Stress',
             'Diabetes',
-            'Infections',
-            'Blood Purifier',
-            'Diuretic',
-            'Cancer',
+            'Lung Health',
+            'Immune Booster',
             'Inflammation'
         ],
         price: 20,
         //     // inStock: Boolean
     }, {
         name: 'Cardamom',
-        description: 'Burdock root has been used for centuries in holistic medicine to treat a variety of different conditions. Traditionally, it was most commonly used as a diuretic and a digestive aid.',
+        description: 'The health benefits of cardamom include gastrointestinal protection, cholesterol control, anti-cancer properties, relief from cardiovascular issues, and improvement of blood circulation in the body. It is useful for curing digestive problems, dental diseases, and urinary tract infections such as cystitis, nephritis, and gonorrhea. Cardamom possesses aphrodisiac properties and is also used as a cure for impotence, erectile dysfunction, and premature ejaculation.',
         img: 'cardamom.jpg',
         ailmentName: [
-            'Diabetes',
+            'Sore Throat',
             'Infections',
-            'Blood Purifier',
-            'Diuretic',
-            'Cancer',
-            'Inflammation'
+            'Tuberculosis',
+            'Lung Health',
+            'Venom Antidote',
+            'UTI',
+            'Gonorrhea',
         ],
         price: 20,
         //     // inStock: Boolean
@@ -187,33 +188,33 @@ let newHerbs = [
         // inStock: Boolean
     }, {
         name: 'Cohosh',
-        description: 'Chlorella is a single-cell green algae containing the green photosynthetic pigments chlorophyll-a and -b in its chloroplast.',
+        description: 'Black cohosh (Cimicifuga racemosa) is a plant commonly used in herbal medicine for the relief of menopausal symptoms. A member of the buttercup family, it has a long history of use in the treatment of arthritis and muscle pain. <br> Blue cohosh is used in alternative medicine to enhance women\’s health, there\’s also some concern that it may have harmful effects. Because blue cohosh is thought to suppress muscle spasms, it\’s often used in alternative medicine to soothe cramps, such as menstrual cramps and stomach cramps.',
         img: 'cohosh.jpg',
         ailmentName: [
-            'Cancer', 
-            'detoxification', 
-            'fibromyalgia', 
-            'radiation treatment side effects', 
-            'stimulates the immune system', 
-            'colds', 
-            'protecting the body against toxic metals', 
-            'slowing the aging process'
+            'Menopause', 
+            'Colic', 
+            'Menstruation', 
+            'Arthritis', 
+            'High Blood Pressure', 
+            'Insomnia', 
+            'Headaches', 
+            'Diabetes'
         ],
         price: 20,
         // inStock: Boolean
     }, {
         name: 'Dong Quai',
-        description: 'Chlorella is a single-cell green algae containing the green photosynthetic pigments chlorophyll-a and -b in its chloroplast.',
+        description: 'Dong qui (also known as female ginseng) is rich in compounds with anti-inflammatory and immune-stimulating effects, among other healthful substances, it is said to aid in treating a host of issues from allergies to constipation, high blood pressure to premature ejaculation, and more.',
         img: 'dongquai.jpeg',
         ailmentName: [
-            'Cancer', 
-            'detoxification', 
-            'fibromyalgia', 
-            'radiation treatment side effects', 
-            'stimulates the immune system', 
-            'colds', 
-            'protecting the body against toxic metals', 
-            'slowing the aging process'
+            'Headaches', 
+            'Menstruation', 
+            'Arthritis', 
+            'Menopause', 
+            'Allergies', 
+            'Anemia', 
+            'High Blood Pressure', 
+            'Constipation'
         ],
         price: 20,
         // inStock: Boolean
