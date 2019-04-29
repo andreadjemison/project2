@@ -222,7 +222,7 @@ main{
 /* =============edit products================ */
  #edit-form form input{
     height: 30px;
-    width: 200px;
+    width: 270px;
     margin: 5px 15px;
     border-radius: 5px;
     font-size: 1.1em;
@@ -236,8 +236,11 @@ main{
  /* .edit{
      text-align: left;
  } */
- .edit button{
+ /* .edit button{
     
+ } */
+ #addnew input{
+     width: 350px;
  }
 /* =============footer================ */
 .footer{

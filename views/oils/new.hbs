@@ -1,0 +1,30 @@
+<main>
+	<div class="herb-container edit">
+		<h2>Add an Essential Oil!</h2>
+
+		<a id='returnlink' href="/oils/">Return to Home Page</a>
+		<br><br>
+		<div id="edit-form" class="herb-container-show">
+
+			<form action="/oils" method="POST">
+				<label for="name">Name</label>
+				<input type="text" name="name" value="" id="" placeholder="Enter Essential Oil Name">
+				<br>
+				<label for="description">Description</label>
+				<input type="text" name="description" value="" id="" placeholder="Enter Essential Oil Description">
+				<br>
+				<label for="img">Image</label>
+				<input type="file" name="img" value="img" placeholder="Upload Image">
+				<br>
+				<label for="price">Price</label>
+				<input type="number" name="price" value="" id="" placeholder="Enter Essential Oil Price">
+				<br>
+				<label for="qty">Uses</label>
+				<input type="number" name="ailmentName" value="" id="" placeholder="Enter Essential Oil Benefits">
+				<br>
+				<input class="button" type="submit" value="Request An Essential Oil">
+			</form>
+
+		</div>
+	</div>
+</main>
