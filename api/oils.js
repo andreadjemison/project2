@@ -29,7 +29,9 @@ const updateOil = (oilid, newid) => {
 const deleteOil = (oilid) => {
     return oilCollection.findByIdAndRemove(oilid)
 }
-
+const deleteAllOils = (oils) => {
+    return oilCollection.deleteMany(oils)
+}
 
 // export the controller with module.exports
 module.exports = {
@@ -37,5 +39,6 @@ module.exports = {
     newOil,
     oneOil,
     updateOil,
-    deleteOil
+    deleteOil,
+    deleteAllOils
 }

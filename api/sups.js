@@ -29,7 +29,9 @@ const updateSup = (supid, newid) => {
 const deleteSup = (supid) => {
     return supplementCollection.findByIdAndRemove(supid)
 }
-
+const deleteAllSups = (sups) => {
+    return supplementCollection.deleteMany(sups)
+}
 
 // export the controller with module.exports
 module.exports = {
@@ -37,5 +39,6 @@ module.exports = {
     newSup,
     oneSup,
     updateSup,
-    deleteSup
+    deleteSup,
+    deleteAllSups
 }

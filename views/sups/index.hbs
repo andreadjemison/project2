@@ -21,11 +21,20 @@
 			</ul> --}}
 		
 	</div>
-	<div class="create">
-			<p>Didn't Find What You Were Looking For?</p>
-			<a href="/sups/new">
-				<input type="submit" value="Request New Supplement">
-			</a>
+	<div class="forms">
+			<div class="create">
+				<p>Didn't Find What You Were Looking For?</p>
+				<a href="/sups/new">
+					<input class="button" id="createbutton" type="submit" value="Request New Supplements">
+				</a>
+			</div>
+			<div class="deleteall">
+
+				<p>Delete All Supplements and start from stratch!</p>
+				<form action="/sups/?_method=delete" method="POST">
+					<input id="createbutton" class="button" type="submit" value="Delete All Supplements">
+				</form>
+			</div>
 		</div>
 	<br><br>
 

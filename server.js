@@ -86,6 +86,13 @@ app.delete('/herbs/:id', (req, res) => {
     })
 })
 
+//delete all herbs
+app.delete('/herbs', (req, res) => {
+    herbApi.deleteAllHerbs(req.params.id).then(() => {
+        res.redirect('/herbs')
+    })
+})
+
 //update single herb
 app.get('/herbs/:id/edit', (req, res) => {
     herbApi.oneHerb(req.params.id)
@@ -138,7 +145,12 @@ app.delete('/oils/:id', (req, res) => {
         res.redirect('/oils')
     })
 })
-
+//delete all oils
+app.delete('/oils', (req, res) => {
+    oilApi.deleteAllOils(req.params.id).then(() => {
+        res.redirect('/oils')
+    })
+})
 
 //update single oil
 app.get('/oils/:id/edit', (req, res) => {
@@ -191,7 +203,12 @@ app.delete('/sups/:id', (req, res) => {
         res.redirect('/sups')
     })
 })
-
+//delete all supplements
+app.delete('/supplements', (req, res) => {
+    oilApi.deleteAllSuos(req.params.id).then(() => {
+        res.redirect('/sups')
+    })
+})
 //update single supplement
 app.get('/sups/:id/edit', (req, res) => {
     supApi.oneSup(req.params.id)
