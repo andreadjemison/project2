@@ -52,7 +52,7 @@ let newHerbs = [
     }, {
         name: 'Banafsha',
         description: 'Sweet violet is sometimes applied directly to the skin for skin disorders and as a skin cleanser. In herbal combinations, sweet violet is used for breathing problems including sudden (acute) and ongoing (chronic) bronchitis, asthma, emphysema, “dust-damaged” lungs, swelling (inflammation) of the respiratory tract, cold and flu symptoms, hoarseness, cough, and chest congestion. These herbal combinations are also used for involuntary urination (incontinence) in older people, bed-wetting, irritable bladder, and prostate conditions.',
-        img: 'banafsha.jpg',
+        img: 'banafsha.JPG',
         ailmentName: [
             'Inflammation',
             'Insomnia',

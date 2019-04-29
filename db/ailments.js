@@ -35,10 +35,10 @@ let newAilments = [
     //     ref: 'Supplements'
     //   }],
     //     // inStock: Boolean
-    // }, {
-    //     ailmentName: 'Allergies',
-    //     description: 'Allergies occur when your immune system reacts to a foreign substance — such as pollen, bee venom or pet dander — or a food that doesn\'t cause a reaction in most people. Your immune system produces substances known as antibodies. When you have allergies, your immune system makes antibodies that identify a particular allergen as harmful, even though it isn\'t. When you come into contact with the allergen, your immune system\'s reaction can inflame your skin, sinuses, airways or digestive system.',
-    //     img: 'allergies.gif',
+    }, {
+        ailmentName: 'Allergies',
+        description: 'Allergies occur when your immune system reacts to a foreign substance — such as pollen, bee venom or pet dander — or a food that doesn\'t cause a reaction in most people. Your immune system produces substances known as antibodies. When you have allergies, your immune system makes antibodies that identify a particular allergen as harmful, even though it isn\'t. When you come into contact with the allergen, your immune system\'s reaction can inflame your skin, sinuses, airways or digestive system.',
+        img: 'allergies.gif',
         // herbId: [{
         //     ailmentName: `${herb.id}`,
         //       ref: 'Herb'
@@ -53,9 +53,9 @@ let newAilments = [
         //   }],
     //     //     // inStock: Boolean
     }, {
-        // ailmentName: 'Alzheimer\'s',
-        // description: 'Sweet violet is sometimes applied directly to the skin for skin disorders and as a skin cleanser. In herbal combinations, sweet violet is used for breathing problems including sudden (acute) and ongoing (chronic) bronchitis, asthma, emphysema, “dust-damaged” lungs, swelling (inflammation) of the respiratory tract, cold and flu symptoms, hoarseness, cough, and chest congestion. These herbal combinations are also used for involuntary urination (incontinence) in older people, bed-wetting, irritable bladder, and prostate conditions.',
-        // img: 'alzheimer.jpg',
+        ailmentName: 'Alzheimer\'s',
+        description: 'Sweet violet is sometimes applied directly to the skin for skin disorders and as a skin cleanser. In herbal combinations, sweet violet is used for breathing problems including sudden (acute) and ongoing (chronic) bronchitis, asthma, emphysema, “dust-damaged” lungs, swelling (inflammation) of the respiratory tract, cold and flu symptoms, hoarseness, cough, and chest congestion. These herbal combinations are also used for involuntary urination (incontinence) in older people, bed-wetting, irritable bladder, and prostate conditions.',
+        img: 'alzheimer.jpg',
     //     ailmentName: [
     //         'Inflammation',
     //         'Insomnia',
@@ -609,13 +609,13 @@ let newAilments = [
     },
 ]
 
-for(let i=0; i<herbApi.allHerbs().length; i++){
-    console.log(herbApi.allHerbs().length)
-    if (ailment.ailmentName === herb.ailmentName){
-      return herbCollection.find()
-    }
+// for(let i=0; i<herbApi.allHerbs().length; i++){
+//     console.log(herbApi.allHerbs().length)
+//     if (ailment.ailmentName === herb.ailmentName){
+//       return herbCollection.find()
+//     }
 
-  }
+//   }
 
 
 // ailment.deleteMany()

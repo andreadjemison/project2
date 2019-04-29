@@ -204,8 +204,8 @@ app.delete('/sups/:id', (req, res) => {
     })
 })
 //delete all supplements
-app.delete('/supplements', (req, res) => {
-    oilApi.deleteAllSuos(req.params.id).then(() => {
+app.delete('/sups', (req, res) => {
+    supApi.deleteAllSups(req.params.id).then(() => {
         res.redirect('/sups')
     })
 })
@@ -257,6 +257,12 @@ app.get('/ailments/:id', (req, res) => {
 //delete single ailment
 app.delete('/ailments/:id', (req, res) => {
     ailApi.deleteAilment(req.params.id).then(() => {
+        res.redirect('/ailments')
+    })
+})
+//delete all ailment
+app.delete('/ailments', (req, res) => {
+    ailApi.deleteAllAilments(req.params.id).then(() => {
         res.redirect('/ailments')
     })
 })

@@ -16,10 +16,25 @@
 		</div>
 		<br><br>
 		{{!-- <form action="" method="post"></form> --}}
-		<div class="create">
+		{{!-- <div class="create">
 			<p>Didn't Find What You Were Looking For?</p>
 			<a href="/herbs/new">
 				<input type="submit" value="Request New Herb">
 			</a>
+		</div> --}}
+		<div class="forms">
+			<div class="create">
+				<p>Didn't Find What You Were Looking For?</p>
+				<a href="/ailments/new">
+					<input class="button" id="createbutton" type="submit" value="Add Ailment or Benefit">
+				</a>
+			</div>
+			<div class="deleteall">
+
+				<p>Delete All Ailments/Benefits and start from stratch!</p>
+				<form action="/ailments/?_method=delete" method="POST">
+					<input id="createbutton" class="button" type="submit" value="Delete All">
+				</form>
+			</div>
 		</div>
 </div>

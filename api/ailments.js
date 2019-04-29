@@ -9,9 +9,9 @@ const ailmentSchema = new mongoose.Schema({
     ailmentName: String,
     description: String,
     img: String,
-    herbId: [{type: ObjectId, ref: 'Herb'}],
-    oilId: [{type: ObjectId, ref: 'Oil'}],
-    supId: [{type: ObjectId, ref: 'Supplements'}]
+    // herbId: [{type: ObjectId, ref: 'Herb'}],
+    // oilId: [{type: ObjectId, ref: 'Oil'}],
+    // supId: [{type: ObjectId, ref: 'Supplements'}]
 })
 let ailmentCollection = mongoose.model('Ailment', ailmentSchema)
 // let herbCollection = mongoose.model('Herb', herbSchema)
@@ -38,11 +38,15 @@ const updateAilment = (ailmentid, newid) => {
 const deleteAilment = (ailmentid) => {
     return ailmentCollection.findByIdAndRemove(ailmentid)
 }
+const deleteAllAilments = (ailments) => {
+    return ailmentCollection.deleteMany(ailments)
+}
 
 module.exports = {
     allAilments,
     newAilment,
     oneAilment,
     updateAilment,
-    deleteAilment
+    deleteAilment,
+    deleteAllAilments
 }

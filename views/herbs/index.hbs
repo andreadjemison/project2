@@ -4,15 +4,16 @@
 
 		<div class="herbs-container">
 			{{#each herbs}}
-			<div class="herbs">
-				<a href="/herbs/{{_id}}">
+			<a href="/herbs/{{_id}}">
+				<div class="herbs">
+
 					<h3> {{ name }} </h3>
 					<img src="../imgs/{{ img }}" alt="" srcset="">
 
-				</a>
-				<h4>${{price}} per pound </h4>
-			</div>
 
+					<h4>${{price}} per pound </h4>
+				</div>
+			</a>
 			{{/each}}
 			{{!-- <ul class="ailmentlist">
 				<h3>Best Used For</h3>

@@ -43,7 +43,6 @@ nav img{
     width: 100vw;
     display: flex;
     justify-content: space-around;
-    /* border: solid black; */
     height: 50px;
 }
 #menuitems a {
@@ -54,7 +53,10 @@ nav img{
     font-family: 'Lobster', cursive;
     text-shadow: green 3px 3px 9px;
 }
-
+#menuitems a:hover{
+    color: green;
+    text-shadow: black 3px 3px 9px;
+}
 /* =============general headers================ */
 h1{
     color: green;
@@ -71,7 +73,7 @@ h2{
 h3{
     font-size: 2em;
     font-family: 'Lobster', cursive;
-    color: black;
+    color: white;
     margin: 12px 0;
     text-shadow: green 1px 1px 5px;
 }
@@ -169,6 +171,7 @@ main{
 }
 .herbs:hover, .oils:hover, .sups:hover{
     box-shadow: 3px 3px 15px;
+    background: black;
 }
 .forms{
     display: flex;
@@ -232,13 +235,7 @@ main{
      font-family: 'Poppins', sans-serif;
      padding: 10px;
      margin-left: 50px;
- }
- /* .edit{
-     text-align: left;
- } */
- /* .edit button{
-    
- } */
+}
  #addnew input{
      width: 350px;
  }
@@ -261,4 +258,7 @@ main{
     color: green;
     font-family: 'Lobster', cursive;
     text-shadow: black 1px 1px 5px;
+}
+.footer a p:hover{
+    color: green;
 }
