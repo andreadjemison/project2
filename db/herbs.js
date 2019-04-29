@@ -15,7 +15,7 @@ let newHerbs = [
             'Men Fertility',
             'Inflammation'
         ],
-        price: 20,
+        price: 17.58,
         //     // inStock: Boolean{
     }, {
         name: 'Aloe Vera',
@@ -31,7 +31,7 @@ let newHerbs = [
             'Diabetes',
             'Depression'
         ],
-        price: 20,
+        price: 26.52,
         // inStock: Boolean
     }, {
         name: 'Anise',
@@ -47,7 +47,7 @@ let newHerbs = [
             'Inflammation',
             'Anti-Septic'
         ],
-        price: 20,
+        price: 31.17,
         // inStock: Boolean
     }, {
         name: 'Banafsha',
@@ -62,7 +62,7 @@ let newHerbs = [
             'Depression',
             'Irritability'
         ],
-        price: 20,
+        price: 29.98,
         //     // inStock: Boolean
     }, {
         name: 'Bee Pollen',
@@ -77,7 +77,7 @@ let newHerbs = [
             'Stress',
             'Alcoholism'
         ],
-        price: 20,
+        price: 20.83,
         //     // inStock: Boolean
     }, {
         name: 'Bentonite Clay',
@@ -92,7 +92,7 @@ let newHerbs = [
             'Nausea',
             'Cancer'
         ],
-        price: 20,
+        price: 9.92,
         // inStock: Boolean
     }, {
         name: 'Bladderwrack',
@@ -107,7 +107,7 @@ let newHerbs = [
             'Fatigue',
             'Diabetes'
         ],
-        price: 20,
+        price: 22.75,
         // inStock: Boolean
     }, {
         name: 'Burdock Root',
@@ -121,7 +121,7 @@ let newHerbs = [
             'Cancer',
             'Inflammation'
         ],
-        price: 20,
+        price: 24.93,
         //     // inStock: Boolean
     }, {
         name: 'Bramhi',
@@ -135,7 +135,7 @@ let newHerbs = [
             'Immune Booster',
             'Inflammation'
         ],
-        price: 20,
+        price: 16.67,
         //     // inStock: Boolean
     }, {
         name: 'Cardamom',
@@ -150,7 +150,7 @@ let newHerbs = [
             'UTI',
             'Gonorrhea',
         ],
-        price: 20,
+        price: 66.43,
         //     // inStock: Boolean
     }, {
         name: 'Charcoal',
@@ -168,7 +168,7 @@ let newHerbs = [
             'Toxin Remover',
             'Whiten Teeth'
         ],
-        price: 20,
+        price: 17.58,
         //     // inStock: Boolean
     }, {
         name: 'Chlorella',
@@ -184,7 +184,7 @@ let newHerbs = [
             'protecting the body against toxic metals', 
             'slowing the aging process'
         ],
-        price: 20,
+        price: 51.67,
         // inStock: Boolean
     }, {
         name: 'Cohosh',
@@ -200,7 +200,7 @@ let newHerbs = [
             'Headaches', 
             'Diabetes'
         ],
-        price: 20,
+        price: 39.41,
         // inStock: Boolean
     }, {
         name: 'Dong Quai',
@@ -216,7 +216,7 @@ let newHerbs = [
             'High Blood Pressure', 
             'Constipation'
         ],
-        price: 20,
+        price: 37.92,
         // inStock: Boolean
     }, {
         name: 'Echinacea',
@@ -231,7 +231,7 @@ let newHerbs = [
             'Fatigue', 
             'Diabetes'
         ],
-        price: 20,
+        price: 42.75,
         //     // inStock: Boolean
     }, {
         name: 'Ginseng',
@@ -246,7 +246,7 @@ let newHerbs = [
             'Fatigue', 
             'Diabetes'
         ],
-        price: 20,
+        price: 175.00,
         // inStock: Boolean
     }, {
         name: 'Haritaki',
@@ -259,9 +259,10 @@ let newHerbs = [
             'Sexual Function', 
             'Constipation', 
             'Digestion', 
-            'Diabetes'
+            'Diabetes',
+            'Brain Function'
         ],
-        price: 20,
+        price: 26.45,
         //     // inStock: Boolean
     }, {
         name: 'Irish Sea Moss',
@@ -276,7 +277,7 @@ let newHerbs = [
             'Skin', 
             'Tuberculosis'
         ],
-        price: 20,
+        price: 35.42,
         // inStock: Boolean
     }, {
         name: 'Maca Root',
@@ -289,7 +290,7 @@ let newHerbs = [
             'Depression', 
             'Chemical Balance'
         ],
-        price: 20,
+        price: 18.25,
         // inStock: Boolean
     }, {
         name: 'Mucuna',
@@ -304,7 +305,7 @@ let newHerbs = [
             'Insomnia', 
             'Fatigue'
         ],
-        price: 20,
+        price: 18.75,
         //     // inStock: Boolean
     }, {
         name: 'Mullein',
@@ -320,7 +321,7 @@ let newHerbs = [
             'Sunburn', 
             'Postpartum Healing'
         ],
-        price: 15,
+        price: 24.75,
         //     // inStock: Boolean
     }, {
         name: 'Neem',
@@ -339,7 +340,7 @@ let newHerbs = [
             'Digestion', 
             'Birth Control'
         ],
-        price: 20,
+        price: 16.25,
         // inStock: Boolean
     }, {
         name: 'Olive Leaf',
@@ -355,7 +356,7 @@ let newHerbs = [
             'Diabetes', 
             'Fatigue'
         ],
-        price: 20,
+        price: 22.67,
         // inStock: Boolean
     }, {
         name: 'Rosehips',
@@ -371,7 +372,7 @@ let newHerbs = [
             'Diabetes', 
             'Sciatica'
         ],
-        price: 12,
+        price: 19.17,
         // inStock: Boolean
     }, {
         name: 'Spirulina',
@@ -384,7 +385,7 @@ let newHerbs = [
             'hair loss', 
             'menopause'
         ],
-        price: 20,
+        price: 35.42,
         // inStock: Boolean
     }, {
         name: 'Turmeric',
@@ -399,7 +400,7 @@ let newHerbs = [
             'Diarrhea', 
             'Alzheimer\'s'
         ],
-        price: 20,
+        price: 11.53,
         //     // inStock: Boolean
     },
 ]
