@@ -26,7 +26,7 @@ nav{
 nav a{
     display:flex;
     align-items:center;
-    justify-content: right;  
+    justify-content: space-around;  
     color: white; 
 }
 nav img{
@@ -34,19 +34,14 @@ nav img{
     width: 100px;
     margin-left: 10px;
 }
-#cart{
-    height: 70px;
-    width: 80px;
-    padding-right: 20px;
-}
 #menuitems{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    height: 50px;
+    height: 45px;
 }
 #menuitems a {
-    padding: 16px;
+    padding: 0 25px;
     text-decoration: none;
     font-size: 1.5em;
     color: white;
@@ -83,7 +78,7 @@ h3{
 }
 h4{
     font-size: 1.5em;
-    margin: 6px 0;
+    margin: 12px 0;
     color: white;
     letter-spacing: 1;
     font-family: 'Roboto', sans-serif;
@@ -132,15 +127,6 @@ main{
     width: 500px;
     height: 300px;
 }
-/* =============ailments page================ */
-.ailment img{
-    width: 450px;
-    height: 400px;
-}
-.ailbuttons {
-    justify-content: space-between;
-}
-
 /* =============index of products================ */
 .herbs-container, .oils-container, .sups-container{
     display: flex;
@@ -176,7 +162,7 @@ main{
     padding: 5px;
     width: 300px;
     color: black;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 .herbs:hover, .oils:hover, .sups:hover{
     box-shadow: 3px 3px 15px;
