@@ -34,10 +34,6 @@ const deleteAllHerbs = (herbs) => {
     return herbCollection.deleteMany(herbs)
 }
 
-const filterHerb = (ailmentName) => {
-    return herbCollection.insertMany(ailmentName)
-}
-
 // export the controller with module.exports
 module.exports = {
     allHerbs,
@@ -46,5 +42,4 @@ module.exports = {
     updateHerb,
     deleteHerb,
     deleteAllHerbs,
-    filterHerb
 }

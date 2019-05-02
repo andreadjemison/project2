@@ -1,30 +1,22 @@
-<div class="background">
-	<d>
+	<main>
 		<h2>All Herbs</h2>
 
 		<div class="herbs-container">
 			{{#each herbs}}
 			<a href="/herbs/{{_id}}">
 				<div class="herbs">
-
 					<h3> {{ name }} </h3>
+					<br>
+
 					<img src="../imgs/{{ img }}" alt="" srcset="">
-
-
 					<h4>${{price}} per pound </h4>
 				</div>
 			</a>
 			{{/each}}
-			{{!-- <ul class="ailmentlist">
-				<h3>Best Used For</h3>
-				{{#each ailmentName}}
-				<li>{{this}}</li>
-				{{/each}}
-			</ul> --}}
-
 		</div>
+
 		<br><br>
-		{{!-- <form action="" method="post"></form> --}}
+
 		<div class="forms">
 			<div class="create">
 				<p>Didn't Find What You Were Looking For?</p>
@@ -33,11 +25,11 @@
 				</a>
 			</div>
 			<div class="deleteall">
-
 				<p>Delete All Herbs and start from stratch!</p>
 				<form action="/herbs/?_method=delete" method="POST">
 					<input id="createbutton" class="button" type="submit" value="Delete All Herbs">
 				</form>
 			</div>
 		</div>
-</div>
+
+	</main>

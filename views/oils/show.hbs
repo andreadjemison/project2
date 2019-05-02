@@ -1,23 +1,23 @@
 <main>
     <div class="oil-container">
-        {{!-- <h2>All oils</h2> --}}
-        <a id='returnlink'  href="/oils">Return to All Essential Oils</a>
-<br>
+
+        <a id='returnlink' href="/oils">Return to All Essential Oils</a>
+        <br>
         <div class="oil">
-            <a href="oils/{{_id}}">
-                <h3  id="nameone"> {{ oil.name }} </h3>
-                <img src="../imgs/{{ oil.img }}" alt="" srcset="">
-
-            </a>
-
+            <h3 id="nameone"> {{ oil.name }} </h3>
+            <img src="../imgs/{{ oil.img }}" alt="" srcset="">
             <h5>$ {{oil.price}} per pound </h5>
             <p>{{oil.description}}</p>
+
             <ul class="ailmentlist">
-                <h3  id="usedfor">Best Used For</h3>
+                <h3 id="usedfor">Best Used For</h3>
+
                 {{#each oil.ailmentName}}
                 <li>{{this}}</li>
                 {{/each}}
+
             </ul>
+
             <div class="buttons">
                 <a href="/oils/{{oil.id}}/edit">
                     <input type="submit" value="Modify Oil" class="button">
@@ -26,6 +26,7 @@
                     <input type="submit" value="Delete Oil" class="button">
                 </form>
             </div>
+
         </div>
     </div>
 

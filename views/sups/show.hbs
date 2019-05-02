@@ -1,23 +1,21 @@
 <main>
     <div class="sup-container">
-        {{!-- <h2>All sups</h2> --}}
+
         <a id='returnlink' href="/sups">Return to All Supplements</a>
-<br>
+        <br>
         <div class="sup">
-            <a href="sups/{{_id}}">
-                <h3 id="nameone"> {{ sup.name }} </h3>
-                <img src="../imgs/{{ sup.img }}" alt="" srcset="">
-
-            </a>
-
+            <h3 id="nameone"> {{ sup.name }} </h3>
+            <img src="../imgs/{{ sup.img }}" alt="" srcset="">
             <h5>$ {{sup.price}} per pound </h5>
             <p>{{sup.description}}</p>
 
             <ul class="ailmentlist">
                 <h3 id="usedfor">Best Used For</h3>
+
                 {{#each sup.ailmentName}}
                 <li>{{this}}</li>
                 {{/each}}
+
             </ul>
 
             <div class="buttons">
@@ -28,6 +26,7 @@
                     <input type="submit" value="Delete Supplement" class="button">
                 </form>
             </div>
+
         </div>
     </div>
 

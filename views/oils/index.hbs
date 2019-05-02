@@ -3,43 +3,31 @@
 
 	<div class="oils-container">
 		{{#each oils}}
-		<div class="oils">
-			<a href="/oils/{{_id}}">
+		<a href="/oils/{{_id}}">
+			<div class="oils">
 				<h3> {{ name }} </h3>
 				<img src="../imgs/{{ img }}" alt="" srcset="">
-
-			</a>
-			<h4>${{price}} per pound </h4>
-
-		</div>
+				<h4>${{price}} per pound </h4>
+			</div>
+		</a>
 		{{/each}}
-		{{!-- <p>{{description}}</p> --}}
-
-
-		{{!-- <ul class="ailmentlist">
-				<h3>Best Used For</h3>
-				{{#each ailmentName}}
-				<li>{{this}}</li>
-				{{/each}}
-			</ul> --}}
-
-		<br><br>
-
 	</div>
-	<div class="forms">
-			<div class="create">
-				<p>Didn't Find What You Were Looking For?</p>
-				<a href="/oils/new">
-					<input class="button" id="createbutton" type="submit" value="Request New Essential Oils">
-				</a>
-			</div>
-			<div class="deleteall">
 
-				<p>Delete All Essential Oils and start from stratch!</p>
-				<form action="/oils/?_method=delete" method="POST">
-					<input id="createbutton" class="button" type="submit" value="Delete All Essential Oils">
-				</form>
-			</div>
+	<br><br>
+
+	<div class="forms">
+		<div class="create">
+			<p>Didn't Find What You Were Looking For?</p>
+			<a href="/oils/new">
+				<input class="button" id="createbutton" type="submit" value="Request New Essential Oils">
+			</a>
 		</div>
-			
+		<div class="deleteall">
+			<p>Delete All Essential Oils and start from stratch!</p>
+			<form action="/oils/?_method=delete" method="POST">
+				<input id="createbutton" class="button" type="submit" value="Delete All Essential Oils">
+			</form>
+		</div>
+	</div>
+
 </main>

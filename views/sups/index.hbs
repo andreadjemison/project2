@@ -3,39 +3,31 @@
 
 	<div class="sups-container">
 		{{#each sups}}
-		<div class="sups">
-			<a href="/sups/{{_id}}">
+		<a href="/sups/{{_id}}">
+			<div class="sups">
 				<h3> {{ name }} </h3>
 				<img src="../imgs/{{ img }}" alt="" srcset="">
-
-			</a>
-			<h4>${{price}} per pound </h4>
-		</div>
-
+				<h4>${{price}} per pound </h4>
+			</div>
+		</a>
 		{{/each}}
-		{{!-- <ul class="ailmentlist">
-				<h3>Best Used For</h3>
-				{{#each ailmentName}}
-				<li>{{this}}</li>
-				{{/each}}
-			</ul> --}}
-		
 	</div>
-	<div class="forms">
-			<div class="create">
-				<p>Didn't Find What You Were Looking For?</p>
-				<a href="/sups/new">
-					<input class="button" id="createbutton" type="submit" value="Request New Supplements">
-				</a>
-			</div>
-			<div class="deleteall">
 
-				<p>Delete All Supplements and start from stratch!</p>
-				<form action="/sups/?_method=delete" method="POST">
-					<input id="createbutton" class="button" type="submit" value="Delete All Supplements">
-				</form>
-			</div>
-		</div>
 	<br><br>
+
+	<div class="forms">
+		<div class="create">
+			<p>Didn't Find What You Were Looking For?</p>
+			<a href="/sups/new">
+				<input class="button" id="createbutton" type="submit" value="Request New Supplements">
+			</a>
+		</div>
+		<div class="deleteall">
+			<p>Delete All Supplements and start from stratch!</p>
+			<form action="/sups/?_method=delete" method="POST">
+				<input id="createbutton" class="button" type="submit" value="Delete All Supplements">
+			</form>
+		</div>
+	</div>
 
 </main>

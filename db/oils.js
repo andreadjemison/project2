@@ -1,4 +1,4 @@
-let oil = require('../api/oils.js')
+let oil = require('../api/herbs.js')
 
 let newOils = [
     {
