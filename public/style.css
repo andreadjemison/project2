@@ -66,8 +66,12 @@ h1{
 }
 h2{
     text-align: center;
-    color: green;
+    color: white;
+    margin: 0 auto;
+    text-shadow: black 1px 1px 5px;
     font-weight: bolder;
+    font-size: 2em;
+    padding: 20px 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h3{
@@ -109,8 +113,8 @@ main{
     text-align: center;
     justify-content: center;
     background: white;
-    /* background: url('../imgs/background2.jpg');
-    background-size: 100% 100%; */
+    background: url('../imgs/background.jpg');
+    background-size: 100% 100%;
 }
 /* =============home page================ */
 #container{
@@ -148,6 +152,10 @@ main{
     text-shadow: none;
     font-size: 3em;
 }
+#nametwo{
+    color: black;
+    font-size: 2.8em;
+}
 #usedfor{
     color: green;
     text-shadow: none;
@@ -161,17 +169,18 @@ main{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: #414141;
+    background: black;
     align-items: center;
     margin: 15px 20px;
     border-radius: 20px;
     padding: 5px;
     width: 300px;
     color: black;
+    padding-bottom: 30px;
 }
 .herbs:hover, .oils:hover, .sups:hover{
     box-shadow: 3px 3px 15px;
-    background: black;
+    background: #414141;
 }
 .forms{
     display: flex;
