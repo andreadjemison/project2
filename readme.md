@@ -22,13 +22,11 @@ At Drea's Medicinal Herb Shop, we strive to give the best quality herbs and also
 [Aromatherapy](http://www.aromatherapy.com/most_popular.html) <br>
 
 # Technologies Used
-<!-- HTML5 <br> -->
-CSS3 <br>
-jQuery <br>
-Handlebars <br>
-Express <br>
-MongoDB <br>
-Mongoose <br>
+- CSS3 <br>
+- Handlebars <br>
+- Express <br>
+- MongoDB <br>
+- Mongoose <br>
 
 # Next Version
 - Functioning Shopping Cart
