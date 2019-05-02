@@ -1,7 +1,6 @@
 # Overview
 At Drea's Medicinal Herb Shop, we strive to give the best quality herbs and also helpful suggestions to alleviate any ailment you or your loved one may have.
 <br><br>
-<!-- ## Happy Shopping! -->
 
 # Trello & Heroku
 [Trello Board](https://trello.com/b/immpbyRT/sei-project-2)
@@ -10,12 +9,11 @@ At Drea's Medicinal Herb Shop, we strive to give the best quality herbs and also
 
 
 # Wireframes
-![mdimg](imgs/erd.jpg)
-![mdimg](imgs/p2home.jpg)
-![mdimg](imgs/index.jpg)
-![mdimg](imgs/show.jpg)
-![mdimg](imgs/edit.jpg)
-<!-- ![alt text](imgs/new.jpg) -->
+![alt text](imgs/erd.jpg)
+![alt text](imgs/p2home.jpg)
+![alt text](imgs/index.jpg)
+![alt text](imgs/show.jpg)
+![alt text](imgs/edit.jpg)
 
 # References Used
 [Starwest Botanicals](https://www.starwest-botanicals.com/) <br>
@@ -33,4 +31,5 @@ MongoDB <br>
 Mongoose <br>
 
 # Next Version
-Functioning Shopping Cart
+- Functioning Shopping Cart
+- A page where you can click on the ailment or benefit and all the herbs, essential oils, and supplements that helps with that will appear.

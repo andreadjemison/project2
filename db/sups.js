@@ -1,4 +1,4 @@
-const sup = require('../api/herbs.js')
+const sup = require('../api/sups.js')
 
 let newSups = [
     {
